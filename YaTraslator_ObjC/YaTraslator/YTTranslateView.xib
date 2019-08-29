@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YTTranslateView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4x-HV-7my">
+                    <rect key="frame" x="8" y="8" width="79" height="30"/>
+                    <accessibility key="accessibilityConfiguration" identifier="translator_bar_clear_button"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="79" id="6DE-QF-Xcm"/>
+                    </constraints>
+                    <state key="normal" title="Очистить"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNc-x5-HUb">
+                    <rect key="frame" x="107" y="8" width="91" height="30"/>
+                    <accessibility key="accessibilityConfiguration" identifier="translator_bar_cancel_button"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="91" id="bEx-Jv-cV8"/>
+                    </constraints>
+                    <state key="normal" title="Отмена"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pa-X3-3F3">
+                    <rect key="frame" x="480" y="8" width="112" height="30"/>
+                    <accessibility key="accessibilityConfiguration" identifier="translator_bar_translate_button"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="112" id="Ead-9k-UrD"/>
+                    </constraints>
+                    <state key="normal" title="Перевести"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration" identifier="translate_tool_bar_buttons"/>
+            <constraints>
+                <constraint firstItem="JNc-x5-HUb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="2cw-Or-Kff"/>
+                <constraint firstItem="1Pa-X3-3F3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="5YI-Bd-xyc"/>
+                <constraint firstItem="JNc-x5-HUb" firstAttribute="leading" secondItem="B4x-HV-7my" secondAttribute="trailing" constant="20" id="ASq-FK-9WC"/>
+                <constraint firstAttribute="bottom" secondItem="B4x-HV-7my" secondAttribute="bottom" constant="8" id="Dei-vv-1NW"/>
+                <constraint firstItem="B4x-HV-7my" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="SVI-nw-ake"/>
+                <constraint firstAttribute="trailing" secondItem="1Pa-X3-3F3" secondAttribute="trailing" constant="8" id="baI-cV-u7Q"/>
+                <constraint firstAttribute="bottom" secondItem="1Pa-X3-3F3" secondAttribute="bottom" constant="8" id="gSv-qy-369"/>
+                <constraint firstItem="B4x-HV-7my" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="gcM-gS-4O2"/>
+                <constraint firstAttribute="bottom" secondItem="JNc-x5-HUb" secondAttribute="bottom" constant="8" id="mIV-S0-5hb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="JNc-x5-HUb" id="UC4-j8-6YF"/>
+                <outlet property="clearButton" destination="B4x-HV-7my" id="py5-NZ-Dpo"/>
+                <outlet property="translateButton" destination="1Pa-X3-3F3" id="hw4-kU-by3"/>
+            </connections>
+            <point key="canvasLocation" x="554" y="113.5"/>
+        </view>
+    </objects>
+</document>

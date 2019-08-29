@@ -1,0 +1,21 @@
+dependencies: \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/YTCoreDataService.m \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/PrefixHeader.pch \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/YTCoreDataService.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/YTCoreDataContext.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/YTTranslator.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/YTSupportLanguage.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/YTCountry.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/YTLanguage.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/SupportEntity.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/SupportEntity+CoreDataProperties.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/CountryEntity.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/CountryEntity+CoreDataProperties.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/LanguageEntity.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/LanguageEntity+CoreDataProperties.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/TranslatorEntity+CoreDataProperties.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/TranslatorEntity.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/InputLanguageEntity+CoreDataProperties.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/InputLanguageEntity.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/OutputLanguageEntity+CoreDataProperties.h \
+  /Users/diman/Documents/xcode_workspace/YaTraslator/YaTraslator/OutputLanguageEntity.h

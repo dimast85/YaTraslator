@@ -1,0 +1,1153 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E22F43951ECA4FB700C32010 /* YTGetLangs.m in Sources */ = {isa = PBXBuildFile; fileRef = E22F43941ECA4FB700C32010 /* YTGetLangs.m */; };
+		E242179A1ECEDB6400032FC4 /* YTHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E24217991ECEDB6400032FC4 /* YTHistoryViewController.m */; };
+		E242179D1ECEDBDC00032FC4 /* YTHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E242179C1ECEDBDC00032FC4 /* YTHistoryTableViewCell.m */; };
+		E24217A61ECF258C00032FC4 /* YaTraslatorPerfomanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E24217A51ECF258C00032FC4 /* YaTraslatorPerfomanceTests.m */; };
+		E2469E8E1ED58D4700EA8A07 /* YTSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2469E8D1ED58D4700EA8A07 /* YTSettingViewController.m */; };
+		E24FDF851ECB56DA009430B5 /* YTTranslatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E24FDF841ECB56DA009430B5 /* YTTranslatorViewController.m */; };
+		E26DCDAF1ECC7A560048B5F9 /* YaTraslatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DCDAE1ECC7A560048B5F9 /* YaTraslatorUITests.m */; };
+		E26DCDB91ECC88480048B5F9 /* YTCountriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DCDB81ECC88480048B5F9 /* YTCountriesView.m */; };
+		E26DCDBB1ECC88560048B5F9 /* YTCountriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26DCDBA1ECC88560048B5F9 /* YTCountriesView.xib */; };
+		E271F1921ECB983A00C3201B /* YTTranslateView.m in Sources */ = {isa = PBXBuildFile; fileRef = E271F1911ECB983A00C3201B /* YTTranslateView.m */; };
+		E271F1941ECB984800C3201B /* YTTranslateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E271F1931ECB984800C3201B /* YTTranslateView.xib */; };
+		E28AA3B31EBD2B8F0014295A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E28AA3B21EBD2B8F0014295A /* main.m */; };
+		E28AA3B61EBD2B8F0014295A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E28AA3B51EBD2B8F0014295A /* AppDelegate.m */; };
+		E28AA3BC1EBD2B8F0014295A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28AA3BA1EBD2B8F0014295A /* Main.storyboard */; };
+		E28AA3BF1EBD2B8F0014295A /* YaTraslator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E28AA3BD1EBD2B8F0014295A /* YaTraslator.xcdatamodeld */; };
+		E28AA3C11EBD2B8F0014295A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28AA3C01EBD2B8F0014295A /* Assets.xcassets */; };
+		E28AA3C41EBD2B8F0014295A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28AA3C21EBD2B8F0014295A /* LaunchScreen.storyboard */; };
+		E28AA3CF1EBD2B8F0014295A /* SupportLanguageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E28AA3CE1EBD2B8F0014295A /* SupportLanguageTests.m */; };
+		E28AA3EB1EBD2C2A0014295A /* YTLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = E28AA3EA1EBD2C2A0014295A /* YTLanguage.m */; };
+		E28AA3EE1EBD2E7E0014295A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28AA3ED1EBD2E7E0014295A /* UIKit.framework */; };
+		E28AA3F11EBD309F0014295A /* YTTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = E28AA3F01EBD309F0014295A /* YTTranslator.m */; };
+		E29858D81EBF4D5D00B41308 /* YTResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = E29858D71EBF4D5D00B41308 /* YTResponce.m */; };
+		E29858DC1EBF7C8200B41308 /* YTCoreDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E29858DB1EBF7C8200B41308 /* YTCoreDataModel.m */; };
+		E29858DF1EBF7DEE00B41308 /* YTCoreDataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E29858DE1EBF7DEE00B41308 /* YTCoreDataContext.m */; };
+		E29858E21EBF7E6C00B41308 /* YTCoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = E29858E11EBF7E6C00B41308 /* YTCoreDataService.m */; };
+		E2AED23F1EC4596100191AA6 /* YTYandexApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AED23E1EC4596100191AA6 /* YTYandexApiService.m */; };
+		E2AED2431EC48B1C00191AA6 /* YTTranslatorResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AED2421EC48B1C00191AA6 /* YTTranslatorResponce.m */; };
+		E2AED2461EC48B3000191AA6 /* YTSupportResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AED2451EC48B3000191AA6 /* YTSupportResponce.m */; };
+		E2BA0C9B1EC3303300FD7E4D /* SupportEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0C981EC3303300FD7E4D /* SupportEntity+CoreDataProperties.m */; };
+		E2BA0C9C1EC3303300FD7E4D /* SupportEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0C9A1EC3303300FD7E4D /* SupportEntity.m */; };
+		E2BA0CA71EC330AE00FD7E4D /* CountryEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0CA41EC330AE00FD7E4D /* CountryEntity+CoreDataProperties.m */; };
+		E2BA0CA81EC330AE00FD7E4D /* CountryEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0CA61EC330AE00FD7E4D /* CountryEntity.m */; };
+		E2BA0CAA1EC34BF800FD7E4D /* TranslatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0CA91EC34BF800FD7E4D /* TranslatorTests.m */; };
+		E2BA0CB61EC37A6A00FD7E4D /* LanguageEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0CB31EC37A6A00FD7E4D /* LanguageEntity+CoreDataProperties.m */; };
+		E2BA0CB71EC37A6A00FD7E4D /* LanguageEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0CB51EC37A6A00FD7E4D /* LanguageEntity.m */; };
+		E2BA0CBC1EC37A7C00FD7E4D /* OutputLanguageEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0CB91EC37A7C00FD7E4D /* OutputLanguageEntity+CoreDataProperties.m */; };
+		E2BA0CBD1EC37A7C00FD7E4D /* OutputLanguageEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0CBB1EC37A7C00FD7E4D /* OutputLanguageEntity.m */; };
+		E2BA0CC21EC37A8D00FD7E4D /* InputLanguageEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0CBF1EC37A8D00FD7E4D /* InputLanguageEntity+CoreDataProperties.m */; };
+		E2BA0CC31EC37A8D00FD7E4D /* InputLanguageEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0CC11EC37A8D00FD7E4D /* InputLanguageEntity.m */; };
+		E2BA0CC81EC3CB0100FD7E4D /* TranslatorEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0CC51EC3CB0100FD7E4D /* TranslatorEntity+CoreDataProperties.m */; };
+		E2BA0CC91EC3CB0100FD7E4D /* TranslatorEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA0CC71EC3CB0100FD7E4D /* TranslatorEntity.m */; };
+		E2D1367A1EBDBC5700C91AF9 /* YTSupportLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D136791EBDBC5700C91AF9 /* YTSupportLanguage.m */; };
+		E2D1367D1EBDBCC000C91AF9 /* YTCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D1367C1EBDBCC000C91AF9 /* YTCountry.m */; };
+		E2E2F8071EC89B060035A1EC /* YaTraslatorAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E2F8061EC89B060035A1EC /* YaTraslatorAPITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E24217A81ECF258C00032FC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E28AA3A61EBD2B8E0014295A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E28AA3AD1EBD2B8F0014295A;
+			remoteInfo = YaTraslator;
+		};
+		E26DCDB11ECC7A560048B5F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E28AA3A61EBD2B8E0014295A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E28AA3AD1EBD2B8F0014295A;
+			remoteInfo = YaTraslator;
+		};
+		E28AA3CB1EBD2B8F0014295A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E28AA3A61EBD2B8E0014295A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E28AA3AD1EBD2B8F0014295A;
+			remoteInfo = YaTraslator;
+		};
+		E2E2F8091EC89B060035A1EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E28AA3A61EBD2B8E0014295A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E28AA3AD1EBD2B8F0014295A;
+			remoteInfo = YaTraslator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E22F43931ECA4FB700C32010 /* YTGetLangs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTGetLangs.h; sourceTree = "<group>"; };
+		E22F43941ECA4FB700C32010 /* YTGetLangs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTGetLangs.m; sourceTree = "<group>"; };
+		E24217981ECEDB6400032FC4 /* YTHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTHistoryViewController.h; sourceTree = "<group>"; };
+		E24217991ECEDB6400032FC4 /* YTHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTHistoryViewController.m; sourceTree = "<group>"; };
+		E242179B1ECEDBDC00032FC4 /* YTHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTHistoryTableViewCell.h; sourceTree = "<group>"; };
+		E242179C1ECEDBDC00032FC4 /* YTHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTHistoryTableViewCell.m; sourceTree = "<group>"; };
+		E24217A31ECF258C00032FC4 /* YaTraslatorPerfomanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaTraslatorPerfomanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24217A51ECF258C00032FC4 /* YaTraslatorPerfomanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YaTraslatorPerfomanceTests.m; sourceTree = "<group>"; };
+		E24217A71ECF258C00032FC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2469E8C1ED58D4700EA8A07 /* YTSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSettingViewController.h; sourceTree = "<group>"; };
+		E2469E8D1ED58D4700EA8A07 /* YTSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSettingViewController.m; sourceTree = "<group>"; };
+		E24FDF831ECB56DA009430B5 /* YTTranslatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTTranslatorViewController.h; sourceTree = "<group>"; };
+		E24FDF841ECB56DA009430B5 /* YTTranslatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTTranslatorViewController.m; sourceTree = "<group>"; };
+		E26DCDAC1ECC7A550048B5F9 /* YaTraslatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaTraslatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26DCDAE1ECC7A560048B5F9 /* YaTraslatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YaTraslatorUITests.m; sourceTree = "<group>"; };
+		E26DCDB01ECC7A560048B5F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26DCDB71ECC88480048B5F9 /* YTCountriesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTCountriesView.h; sourceTree = "<group>"; };
+		E26DCDB81ECC88480048B5F9 /* YTCountriesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTCountriesView.m; sourceTree = "<group>"; };
+		E26DCDBA1ECC88560048B5F9 /* YTCountriesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTCountriesView.xib; sourceTree = "<group>"; };
+		E271F1901ECB983A00C3201B /* YTTranslateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTTranslateView.h; sourceTree = "<group>"; };
+		E271F1911ECB983A00C3201B /* YTTranslateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTTranslateView.m; sourceTree = "<group>"; };
+		E271F1931ECB984800C3201B /* YTTranslateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTTranslateView.xib; sourceTree = "<group>"; };
+		E28AA3AE1EBD2B8F0014295A /* YaTraslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaTraslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28AA3B21EBD2B8F0014295A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E28AA3B41EBD2B8F0014295A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E28AA3B51EBD2B8F0014295A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E28AA3BB1EBD2B8F0014295A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E28AA3BE1EBD2B8F0014295A /* YaTraslator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YaTraslator.xcdatamodel; sourceTree = "<group>"; };
+		E28AA3C01EBD2B8F0014295A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E28AA3C31EBD2B8F0014295A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E28AA3C51EBD2B8F0014295A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E28AA3CA1EBD2B8F0014295A /* YaTraslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaTraslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28AA3CE1EBD2B8F0014295A /* SupportLanguageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SupportLanguageTests.m; sourceTree = "<group>"; };
+		E28AA3D01EBD2B8F0014295A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E28AA3E91EBD2C2A0014295A /* YTLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTLanguage.h; sourceTree = "<group>"; };
+		E28AA3EA1EBD2C2A0014295A /* YTLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTLanguage.m; sourceTree = "<group>"; };
+		E28AA3EC1EBD2E150014295A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E28AA3ED1EBD2E7E0014295A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E28AA3EF1EBD309F0014295A /* YTTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTTranslator.h; sourceTree = "<group>"; };
+		E28AA3F01EBD309F0014295A /* YTTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTTranslator.m; sourceTree = "<group>"; };
+		E29858D61EBF4D5D00B41308 /* YTResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTResponce.h; sourceTree = "<group>"; };
+		E29858D71EBF4D5D00B41308 /* YTResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTResponce.m; sourceTree = "<group>"; };
+		E29858DA1EBF7C8200B41308 /* YTCoreDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTCoreDataModel.h; sourceTree = "<group>"; };
+		E29858DB1EBF7C8200B41308 /* YTCoreDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTCoreDataModel.m; sourceTree = "<group>"; };
+		E29858DD1EBF7DEE00B41308 /* YTCoreDataContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTCoreDataContext.h; sourceTree = "<group>"; };
+		E29858DE1EBF7DEE00B41308 /* YTCoreDataContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTCoreDataContext.m; sourceTree = "<group>"; };
+		E29858E01EBF7E6C00B41308 /* YTCoreDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTCoreDataService.h; sourceTree = "<group>"; };
+		E29858E11EBF7E6C00B41308 /* YTCoreDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTCoreDataService.m; sourceTree = "<group>"; };
+		E2AED23D1EC4596100191AA6 /* YTYandexApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTYandexApiService.h; sourceTree = "<group>"; };
+		E2AED23E1EC4596100191AA6 /* YTYandexApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTYandexApiService.m; sourceTree = "<group>"; };
+		E2AED2401EC4602800191AA6 /* YTYandexApiServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTYandexApiServiceDelegate.h; sourceTree = "<group>"; };
+		E2AED2411EC48B1C00191AA6 /* YTTranslatorResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTTranslatorResponce.h; sourceTree = "<group>"; };
+		E2AED2421EC48B1C00191AA6 /* YTTranslatorResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTTranslatorResponce.m; sourceTree = "<group>"; };
+		E2AED2441EC48B3000191AA6 /* YTSupportResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSupportResponce.h; sourceTree = "<group>"; };
+		E2AED2451EC48B3000191AA6 /* YTSupportResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSupportResponce.m; sourceTree = "<group>"; };
+		E2BA0C971EC3303300FD7E4D /* SupportEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SupportEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E2BA0C981EC3303300FD7E4D /* SupportEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SupportEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E2BA0C991EC3303300FD7E4D /* SupportEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportEntity.h; sourceTree = "<group>"; };
+		E2BA0C9A1EC3303300FD7E4D /* SupportEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportEntity.m; sourceTree = "<group>"; };
+		E2BA0CA31EC330AE00FD7E4D /* CountryEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountryEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E2BA0CA41EC330AE00FD7E4D /* CountryEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CountryEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E2BA0CA51EC330AE00FD7E4D /* CountryEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryEntity.h; sourceTree = "<group>"; };
+		E2BA0CA61EC330AE00FD7E4D /* CountryEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryEntity.m; sourceTree = "<group>"; };
+		E2BA0CA91EC34BF800FD7E4D /* TranslatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslatorTests.m; sourceTree = "<group>"; };
+		E2BA0CB21EC37A6A00FD7E4D /* LanguageEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LanguageEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E2BA0CB31EC37A6A00FD7E4D /* LanguageEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LanguageEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E2BA0CB41EC37A6A00FD7E4D /* LanguageEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageEntity.h; sourceTree = "<group>"; };
+		E2BA0CB51EC37A6A00FD7E4D /* LanguageEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageEntity.m; sourceTree = "<group>"; };
+		E2BA0CB81EC37A7C00FD7E4D /* OutputLanguageEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OutputLanguageEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E2BA0CB91EC37A7C00FD7E4D /* OutputLanguageEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OutputLanguageEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E2BA0CBA1EC37A7C00FD7E4D /* OutputLanguageEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputLanguageEntity.h; sourceTree = "<group>"; };
+		E2BA0CBB1EC37A7C00FD7E4D /* OutputLanguageEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutputLanguageEntity.m; sourceTree = "<group>"; };
+		E2BA0CBE1EC37A8D00FD7E4D /* InputLanguageEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InputLanguageEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E2BA0CBF1EC37A8D00FD7E4D /* InputLanguageEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InputLanguageEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E2BA0CC01EC37A8D00FD7E4D /* InputLanguageEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputLanguageEntity.h; sourceTree = "<group>"; };
+		E2BA0CC11EC37A8D00FD7E4D /* InputLanguageEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputLanguageEntity.m; sourceTree = "<group>"; };
+		E2BA0CC41EC3CB0100FD7E4D /* TranslatorEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TranslatorEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E2BA0CC51EC3CB0100FD7E4D /* TranslatorEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TranslatorEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E2BA0CC61EC3CB0100FD7E4D /* TranslatorEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslatorEntity.h; sourceTree = "<group>"; };
+		E2BA0CC71EC3CB0100FD7E4D /* TranslatorEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslatorEntity.m; sourceTree = "<group>"; };
+		E2D136781EBDBC5700C91AF9 /* YTSupportLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSupportLanguage.h; sourceTree = "<group>"; };
+		E2D136791EBDBC5700C91AF9 /* YTSupportLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSupportLanguage.m; sourceTree = "<group>"; };
+		E2D1367B1EBDBCC000C91AF9 /* YTCountry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTCountry.h; sourceTree = "<group>"; };
+		E2D1367C1EBDBCC000C91AF9 /* YTCountry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTCountry.m; sourceTree = "<group>"; };
+		E2E2F8041EC89B050035A1EC /* YaTraslatorAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaTraslatorAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E2F8061EC89B060035A1EC /* YaTraslatorAPITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YaTraslatorAPITests.m; sourceTree = "<group>"; };
+		E2E2F8081EC89B060035A1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E24217A01ECF258C00032FC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26DCDA91ECC7A550048B5F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28AA3AB1EBD2B8F0014295A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28AA3EE1EBD2E7E0014295A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28AA3C71EBD2B8F0014295A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E2F8011EC89B050035A1EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E242179E1ECEE0BD00032FC4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E242179B1ECEDBDC00032FC4 /* YTHistoryTableViewCell.h */,
+				E242179C1ECEDBDC00032FC4 /* YTHistoryTableViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		E24217A41ECF258C00032FC4 /* YaTraslatorPerfomanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				E24217A51ECF258C00032FC4 /* YaTraslatorPerfomanceTests.m */,
+				E24217A71ECF258C00032FC4 /* Info.plist */,
+			);
+			path = YaTraslatorPerfomanceTests;
+			sourceTree = "<group>";
+		};
+		E24FDF7F1ECB51D1009430B5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E24FDF821ECB56AE009430B5 /* SettingViewController */,
+				E24FDF811ECB56A2009430B5 /* HistoryViewController */,
+				E24FDF801ECB5695009430B5 /* TranslatorViewController */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		E24FDF801ECB5695009430B5 /* TranslatorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E26DCDB61ECC88270048B5F9 /* CountriesView */,
+				E271F18F1ECB979C00C3201B /* TranslateView */,
+				E24FDF831ECB56DA009430B5 /* YTTranslatorViewController.h */,
+				E24FDF841ECB56DA009430B5 /* YTTranslatorViewController.m */,
+			);
+			name = TranslatorViewController;
+			sourceTree = "<group>";
+		};
+		E24FDF811ECB56A2009430B5 /* HistoryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E242179E1ECEE0BD00032FC4 /* Cell */,
+				E24217981ECEDB6400032FC4 /* YTHistoryViewController.h */,
+				E24217991ECEDB6400032FC4 /* YTHistoryViewController.m */,
+			);
+			name = HistoryViewController;
+			sourceTree = "<group>";
+		};
+		E24FDF821ECB56AE009430B5 /* SettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2469E8C1ED58D4700EA8A07 /* YTSettingViewController.h */,
+				E2469E8D1ED58D4700EA8A07 /* YTSettingViewController.m */,
+			);
+			name = SettingViewController;
+			sourceTree = "<group>";
+		};
+		E25FEDA11EBDD38C001AD9F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E29858D41EBF4D1C00B41308 /* TranslatorApiService */,
+				E25FEDA21EBDD398001AD9F3 /* CoreDataService */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		E25FEDA21EBDD398001AD9F3 /* CoreDataService */ = {
+			isa = PBXGroup;
+			children = (
+				E29858D91EBF7C6300B41308 /* CoreDataModel */,
+				E25FEDA31EBDD3AD001AD9F3 /* Entitys */,
+				E29858E01EBF7E6C00B41308 /* YTCoreDataService.h */,
+				E29858E11EBF7E6C00B41308 /* YTCoreDataService.m */,
+			);
+			name = CoreDataService;
+			sourceTree = "<group>";
+		};
+		E25FEDA31EBDD3AD001AD9F3 /* Entitys */ = {
+			isa = PBXGroup;
+			children = (
+				E2BA0CB11EC37A4400FD7E4D /* Support */,
+				E2BA0CAB1EC379C500FD7E4D /* Translator */,
+			);
+			name = Entitys;
+			sourceTree = "<group>";
+		};
+		E26DCDAD1ECC7A560048B5F9 /* YaTraslatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E26DCDAE1ECC7A560048B5F9 /* YaTraslatorUITests.m */,
+				E26DCDB01ECC7A560048B5F9 /* Info.plist */,
+			);
+			path = YaTraslatorUITests;
+			sourceTree = "<group>";
+		};
+		E26DCDB61ECC88270048B5F9 /* CountriesView */ = {
+			isa = PBXGroup;
+			children = (
+				E26DCDB71ECC88480048B5F9 /* YTCountriesView.h */,
+				E26DCDB81ECC88480048B5F9 /* YTCountriesView.m */,
+				E26DCDBA1ECC88560048B5F9 /* YTCountriesView.xib */,
+			);
+			name = CountriesView;
+			sourceTree = "<group>";
+		};
+		E271F18F1ECB979C00C3201B /* TranslateView */ = {
+			isa = PBXGroup;
+			children = (
+				E271F1901ECB983A00C3201B /* YTTranslateView.h */,
+				E271F1911ECB983A00C3201B /* YTTranslateView.m */,
+				E271F1931ECB984800C3201B /* YTTranslateView.xib */,
+			);
+			name = TranslateView;
+			sourceTree = "<group>";
+		};
+		E28AA3A51EBD2B8E0014295A = {
+			isa = PBXGroup;
+			children = (
+				E28AA3ED1EBD2E7E0014295A /* UIKit.framework */,
+				E28AA3B01EBD2B8F0014295A /* YaTraslator */,
+				E28AA3CD1EBD2B8F0014295A /* YaTraslatorTests */,
+				E2E2F8051EC89B060035A1EC /* YaTraslatorAPITests */,
+				E26DCDAD1ECC7A560048B5F9 /* YaTraslatorUITests */,
+				E24217A41ECF258C00032FC4 /* YaTraslatorPerfomanceTests */,
+				E28AA3AF1EBD2B8F0014295A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E28AA3AF1EBD2B8F0014295A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E28AA3AE1EBD2B8F0014295A /* YaTraslator.app */,
+				E28AA3CA1EBD2B8F0014295A /* YaTraslatorTests.xctest */,
+				E2E2F8041EC89B050035A1EC /* YaTraslatorAPITests.xctest */,
+				E26DCDAC1ECC7A550048B5F9 /* YaTraslatorUITests.xctest */,
+				E24217A31ECF258C00032FC4 /* YaTraslatorPerfomanceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E28AA3B01EBD2B8F0014295A /* YaTraslator */ = {
+			isa = PBXGroup;
+			children = (
+				E25FEDA11EBDD38C001AD9F3 /* Services */,
+				E28AA3E71EBD2BC80014295A /* Model */,
+				E24FDF7F1ECB51D1009430B5 /* UI */,
+				E28AA3B41EBD2B8F0014295A /* AppDelegate.h */,
+				E28AA3B51EBD2B8F0014295A /* AppDelegate.m */,
+				E28AA3BA1EBD2B8F0014295A /* Main.storyboard */,
+				E28AA3C01EBD2B8F0014295A /* Assets.xcassets */,
+				E28AA3C21EBD2B8F0014295A /* LaunchScreen.storyboard */,
+				E28AA3C51EBD2B8F0014295A /* Info.plist */,
+				E28AA3BD1EBD2B8F0014295A /* YaTraslator.xcdatamodeld */,
+				E28AA3B11EBD2B8F0014295A /* Supporting Files */,
+			);
+			path = YaTraslator;
+			sourceTree = "<group>";
+		};
+		E28AA3B11EBD2B8F0014295A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E28AA3B21EBD2B8F0014295A /* main.m */,
+				E28AA3EC1EBD2E150014295A /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E28AA3CD1EBD2B8F0014295A /* YaTraslatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2BA0CA91EC34BF800FD7E4D /* TranslatorTests.m */,
+				E28AA3CE1EBD2B8F0014295A /* SupportLanguageTests.m */,
+				E28AA3D01EBD2B8F0014295A /* Info.plist */,
+			);
+			path = YaTraslatorTests;
+			sourceTree = "<group>";
+		};
+		E28AA3E71EBD2BC80014295A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2D136771EBDBC4400C91AF9 /* Langs */,
+				E28AA3E81EBD2BD10014295A /* Translator */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E28AA3E81EBD2BD10014295A /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				E28AA3E91EBD2C2A0014295A /* YTLanguage.h */,
+				E28AA3EA1EBD2C2A0014295A /* YTLanguage.m */,
+				E28AA3EF1EBD309F0014295A /* YTTranslator.h */,
+				E28AA3F01EBD309F0014295A /* YTTranslator.m */,
+			);
+			name = Translator;
+			sourceTree = "<group>";
+		};
+		E29858C61EBF3FAD00B41308 /* SupportEntity */ = {
+			isa = PBXGroup;
+			children = (
+				E2BA0C971EC3303300FD7E4D /* SupportEntity+CoreDataProperties.h */,
+				E2BA0C981EC3303300FD7E4D /* SupportEntity+CoreDataProperties.m */,
+				E2BA0C991EC3303300FD7E4D /* SupportEntity.h */,
+				E2BA0C9A1EC3303300FD7E4D /* SupportEntity.m */,
+			);
+			name = SupportEntity;
+			sourceTree = "<group>";
+		};
+		E29858C71EBF3FBD00B41308 /* CountryEntity */ = {
+			isa = PBXGroup;
+			children = (
+				E2BA0CA31EC330AE00FD7E4D /* CountryEntity+CoreDataProperties.h */,
+				E2BA0CA41EC330AE00FD7E4D /* CountryEntity+CoreDataProperties.m */,
+				E2BA0CA51EC330AE00FD7E4D /* CountryEntity.h */,
+				E2BA0CA61EC330AE00FD7E4D /* CountryEntity.m */,
+			);
+			name = CountryEntity;
+			sourceTree = "<group>";
+		};
+		E29858D41EBF4D1C00B41308 /* TranslatorApiService */ = {
+			isa = PBXGroup;
+			children = (
+				E29858D51EBF4D4100B41308 /* Responce */,
+				E2AED23D1EC4596100191AA6 /* YTYandexApiService.h */,
+				E2AED23E1EC4596100191AA6 /* YTYandexApiService.m */,
+				E2AED2401EC4602800191AA6 /* YTYandexApiServiceDelegate.h */,
+			);
+			name = TranslatorApiService;
+			sourceTree = "<group>";
+		};
+		E29858D51EBF4D4100B41308 /* Responce */ = {
+			isa = PBXGroup;
+			children = (
+				E29858D61EBF4D5D00B41308 /* YTResponce.h */,
+				E29858D71EBF4D5D00B41308 /* YTResponce.m */,
+				E2AED2411EC48B1C00191AA6 /* YTTranslatorResponce.h */,
+				E2AED2421EC48B1C00191AA6 /* YTTranslatorResponce.m */,
+				E2AED2441EC48B3000191AA6 /* YTSupportResponce.h */,
+				E2AED2451EC48B3000191AA6 /* YTSupportResponce.m */,
+			);
+			name = Responce;
+			sourceTree = "<group>";
+		};
+		E29858D91EBF7C6300B41308 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				E29858DA1EBF7C8200B41308 /* YTCoreDataModel.h */,
+				E29858DB1EBF7C8200B41308 /* YTCoreDataModel.m */,
+				E29858DD1EBF7DEE00B41308 /* YTCoreDataContext.h */,
+				E29858DE1EBF7DEE00B41308 /* YTCoreDataContext.m */,
+			);
+			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		E2BA0CAB1EC379C500FD7E4D /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				E2BA0CAD1EC37A0600FD7E4D /* Language */,
+				E2BA0CAC1EC379F400FD7E4D /* TranslatorEntity */,
+			);
+			name = Translator;
+			sourceTree = "<group>";
+		};
+		E2BA0CAC1EC379F400FD7E4D /* TranslatorEntity */ = {
+			isa = PBXGroup;
+			children = (
+				E2BA0CC41EC3CB0100FD7E4D /* TranslatorEntity+CoreDataProperties.h */,
+				E2BA0CC51EC3CB0100FD7E4D /* TranslatorEntity+CoreDataProperties.m */,
+				E2BA0CC61EC3CB0100FD7E4D /* TranslatorEntity.h */,
+				E2BA0CC71EC3CB0100FD7E4D /* TranslatorEntity.m */,
+			);
+			name = TranslatorEntity;
+			sourceTree = "<group>";
+		};
+		E2BA0CAD1EC37A0600FD7E4D /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				E2BA0CB01EC37A2E00FD7E4D /* AbstractLanguageEntity */,
+				E2BA0CAF1EC37A2300FD7E4D /* OutputLanguageEntity */,
+				E2BA0CAE1EC37A1200FD7E4D /* InputLanguageEntity */,
+			);
+			name = Language;
+			sourceTree = "<group>";
+		};
+		E2BA0CAE1EC37A1200FD7E4D /* InputLanguageEntity */ = {
+			isa = PBXGroup;
+			children = (
+				E2BA0CBE1EC37A8D00FD7E4D /* InputLanguageEntity+CoreDataProperties.h */,
+				E2BA0CBF1EC37A8D00FD7E4D /* InputLanguageEntity+CoreDataProperties.m */,
+				E2BA0CC01EC37A8D00FD7E4D /* InputLanguageEntity.h */,
+				E2BA0CC11EC37A8D00FD7E4D /* InputLanguageEntity.m */,
+			);
+			name = InputLanguageEntity;
+			sourceTree = "<group>";
+		};
+		E2BA0CAF1EC37A2300FD7E4D /* OutputLanguageEntity */ = {
+			isa = PBXGroup;
+			children = (
+				E2BA0CB81EC37A7C00FD7E4D /* OutputLanguageEntity+CoreDataProperties.h */,
+				E2BA0CB91EC37A7C00FD7E4D /* OutputLanguageEntity+CoreDataProperties.m */,
+				E2BA0CBA1EC37A7C00FD7E4D /* OutputLanguageEntity.h */,
+				E2BA0CBB1EC37A7C00FD7E4D /* OutputLanguageEntity.m */,
+			);
+			name = OutputLanguageEntity;
+			sourceTree = "<group>";
+		};
+		E2BA0CB01EC37A2E00FD7E4D /* AbstractLanguageEntity */ = {
+			isa = PBXGroup;
+			children = (
+				E2BA0CB21EC37A6A00FD7E4D /* LanguageEntity+CoreDataProperties.h */,
+				E2BA0CB31EC37A6A00FD7E4D /* LanguageEntity+CoreDataProperties.m */,
+				E2BA0CB41EC37A6A00FD7E4D /* LanguageEntity.h */,
+				E2BA0CB51EC37A6A00FD7E4D /* LanguageEntity.m */,
+			);
+			name = AbstractLanguageEntity;
+			sourceTree = "<group>";
+		};
+		E2BA0CB11EC37A4400FD7E4D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E29858C71EBF3FBD00B41308 /* CountryEntity */,
+				E29858C61EBF3FAD00B41308 /* SupportEntity */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		E2D136771EBDBC4400C91AF9 /* Langs */ = {
+			isa = PBXGroup;
+			children = (
+				E2D136781EBDBC5700C91AF9 /* YTSupportLanguage.h */,
+				E2D136791EBDBC5700C91AF9 /* YTSupportLanguage.m */,
+				E2D1367B1EBDBCC000C91AF9 /* YTCountry.h */,
+				E2D1367C1EBDBCC000C91AF9 /* YTCountry.m */,
+				E22F43931ECA4FB700C32010 /* YTGetLangs.h */,
+				E22F43941ECA4FB700C32010 /* YTGetLangs.m */,
+			);
+			name = Langs;
+			sourceTree = "<group>";
+		};
+		E2E2F8051EC89B060035A1EC /* YaTraslatorAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2E2F8061EC89B060035A1EC /* YaTraslatorAPITests.m */,
+				E2E2F8081EC89B060035A1EC /* Info.plist */,
+			);
+			path = YaTraslatorAPITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E24217A21ECF258C00032FC4 /* YaTraslatorPerfomanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E24217AA1ECF258C00032FC4 /* Build configuration list for PBXNativeTarget "YaTraslatorPerfomanceTests" */;
+			buildPhases = (
+				E242179F1ECF258C00032FC4 /* Sources */,
+				E24217A01ECF258C00032FC4 /* Frameworks */,
+				E24217A11ECF258C00032FC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E24217A91ECF258C00032FC4 /* PBXTargetDependency */,
+			);
+			name = YaTraslatorPerfomanceTests;
+			productName = YaTraslatorPerfomanceTests;
+			productReference = E24217A31ECF258C00032FC4 /* YaTraslatorPerfomanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E26DCDAB1ECC7A550048B5F9 /* YaTraslatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26DCDB51ECC7A560048B5F9 /* Build configuration list for PBXNativeTarget "YaTraslatorUITests" */;
+			buildPhases = (
+				E26DCDA81ECC7A550048B5F9 /* Sources */,
+				E26DCDA91ECC7A550048B5F9 /* Frameworks */,
+				E26DCDAA1ECC7A550048B5F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E26DCDB21ECC7A560048B5F9 /* PBXTargetDependency */,
+			);
+			name = YaTraslatorUITests;
+			productName = YaTraslatorUITests;
+			productReference = E26DCDAC1ECC7A550048B5F9 /* YaTraslatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E28AA3AD1EBD2B8F0014295A /* YaTraslator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E28AA3DE1EBD2B900014295A /* Build configuration list for PBXNativeTarget "YaTraslator" */;
+			buildPhases = (
+				E28AA3AA1EBD2B8F0014295A /* Sources */,
+				E28AA3AB1EBD2B8F0014295A /* Frameworks */,
+				E28AA3AC1EBD2B8F0014295A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YaTraslator;
+			productName = YaTraslator;
+			productReference = E28AA3AE1EBD2B8F0014295A /* YaTraslator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E28AA3C91EBD2B8F0014295A /* YaTraslatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E28AA3E11EBD2B900014295A /* Build configuration list for PBXNativeTarget "YaTraslatorTests" */;
+			buildPhases = (
+				E28AA3C61EBD2B8F0014295A /* Sources */,
+				E28AA3C71EBD2B8F0014295A /* Frameworks */,
+				E28AA3C81EBD2B8F0014295A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E28AA3CC1EBD2B8F0014295A /* PBXTargetDependency */,
+			);
+			name = YaTraslatorTests;
+			productName = YaTraslatorTests;
+			productReference = E28AA3CA1EBD2B8F0014295A /* YaTraslatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2E2F8031EC89B050035A1EC /* YaTraslatorAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E2F80D1EC89B060035A1EC /* Build configuration list for PBXNativeTarget "YaTraslatorAPITests" */;
+			buildPhases = (
+				E2E2F8001EC89B050035A1EC /* Sources */,
+				E2E2F8011EC89B050035A1EC /* Frameworks */,
+				E2E2F8021EC89B050035A1EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2E2F80A1EC89B060035A1EC /* PBXTargetDependency */,
+			);
+			name = YaTraslatorAPITests;
+			productName = YaTraslatorAPITests;
+			productReference = E2E2F8041EC89B050035A1EC /* YaTraslatorAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E28AA3A61EBD2B8E0014295A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YT;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Мартынов Дмитрий";
+				TargetAttributes = {
+					E24217A21ECF258C00032FC4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E28AA3AD1EBD2B8F0014295A;
+					};
+					E26DCDAB1ECC7A550048B5F9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E28AA3AD1EBD2B8F0014295A;
+					};
+					E28AA3AD1EBD2B8F0014295A = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 58XN93BEG2;
+					};
+					E28AA3C91EBD2B8F0014295A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E28AA3AD1EBD2B8F0014295A;
+					};
+					E2E2F8031EC89B050035A1EC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E28AA3AD1EBD2B8F0014295A;
+					};
+				};
+			};
+			buildConfigurationList = E28AA3A91EBD2B8E0014295A /* Build configuration list for PBXProject "YaTraslator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E28AA3A51EBD2B8E0014295A;
+			productRefGroup = E28AA3AF1EBD2B8F0014295A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E28AA3AD1EBD2B8F0014295A /* YaTraslator */,
+				E28AA3C91EBD2B8F0014295A /* YaTraslatorTests */,
+				E2E2F8031EC89B050035A1EC /* YaTraslatorAPITests */,
+				E26DCDAB1ECC7A550048B5F9 /* YaTraslatorUITests */,
+				E24217A21ECF258C00032FC4 /* YaTraslatorPerfomanceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E24217A11ECF258C00032FC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26DCDAA1ECC7A550048B5F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28AA3AC1EBD2B8F0014295A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26DCDBB1ECC88560048B5F9 /* YTCountriesView.xib in Resources */,
+				E28AA3C41EBD2B8F0014295A /* LaunchScreen.storyboard in Resources */,
+				E28AA3C11EBD2B8F0014295A /* Assets.xcassets in Resources */,
+				E271F1941ECB984800C3201B /* YTTranslateView.xib in Resources */,
+				E28AA3BC1EBD2B8F0014295A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28AA3C81EBD2B8F0014295A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E2F8021EC89B050035A1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E242179F1ECF258C00032FC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24217A61ECF258C00032FC4 /* YaTraslatorPerfomanceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26DCDA81ECC7A550048B5F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26DCDAF1ECC7A560048B5F9 /* YaTraslatorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28AA3AA1EBD2B8F0014295A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2BA0CB71EC37A6A00FD7E4D /* LanguageEntity.m in Sources */,
+				E2AED2461EC48B3000191AA6 /* YTSupportResponce.m in Sources */,
+				E2BA0CC31EC37A8D00FD7E4D /* InputLanguageEntity.m in Sources */,
+				E2D1367A1EBDBC5700C91AF9 /* YTSupportLanguage.m in Sources */,
+				E28AA3EB1EBD2C2A0014295A /* YTLanguage.m in Sources */,
+				E2BA0CA81EC330AE00FD7E4D /* CountryEntity.m in Sources */,
+				E2BA0CC91EC3CB0100FD7E4D /* TranslatorEntity.m in Sources */,
+				E2D1367D1EBDBCC000C91AF9 /* YTCountry.m in Sources */,
+				E2BA0C9C1EC3303300FD7E4D /* SupportEntity.m in Sources */,
+				E24FDF851ECB56DA009430B5 /* YTTranslatorViewController.m in Sources */,
+				E2BA0CC81EC3CB0100FD7E4D /* TranslatorEntity+CoreDataProperties.m in Sources */,
+				E2BA0CB61EC37A6A00FD7E4D /* LanguageEntity+CoreDataProperties.m in Sources */,
+				E28AA3F11EBD309F0014295A /* YTTranslator.m in Sources */,
+				E271F1921ECB983A00C3201B /* YTTranslateView.m in Sources */,
+				E2BA0CBD1EC37A7C00FD7E4D /* OutputLanguageEntity.m in Sources */,
+				E2BA0CA71EC330AE00FD7E4D /* CountryEntity+CoreDataProperties.m in Sources */,
+				E22F43951ECA4FB700C32010 /* YTGetLangs.m in Sources */,
+				E29858D81EBF4D5D00B41308 /* YTResponce.m in Sources */,
+				E29858E21EBF7E6C00B41308 /* YTCoreDataService.m in Sources */,
+				E2BA0C9B1EC3303300FD7E4D /* SupportEntity+CoreDataProperties.m in Sources */,
+				E29858DF1EBF7DEE00B41308 /* YTCoreDataContext.m in Sources */,
+				E242179D1ECEDBDC00032FC4 /* YTHistoryTableViewCell.m in Sources */,
+				E28AA3B61EBD2B8F0014295A /* AppDelegate.m in Sources */,
+				E2BA0CC21EC37A8D00FD7E4D /* InputLanguageEntity+CoreDataProperties.m in Sources */,
+				E29858DC1EBF7C8200B41308 /* YTCoreDataModel.m in Sources */,
+				E28AA3BF1EBD2B8F0014295A /* YaTraslator.xcdatamodeld in Sources */,
+				E2AED23F1EC4596100191AA6 /* YTYandexApiService.m in Sources */,
+				E242179A1ECEDB6400032FC4 /* YTHistoryViewController.m in Sources */,
+				E2469E8E1ED58D4700EA8A07 /* YTSettingViewController.m in Sources */,
+				E2BA0CBC1EC37A7C00FD7E4D /* OutputLanguageEntity+CoreDataProperties.m in Sources */,
+				E28AA3B31EBD2B8F0014295A /* main.m in Sources */,
+				E26DCDB91ECC88480048B5F9 /* YTCountriesView.m in Sources */,
+				E2AED2431EC48B1C00191AA6 /* YTTranslatorResponce.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28AA3C61EBD2B8F0014295A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28AA3CF1EBD2B8F0014295A /* SupportLanguageTests.m in Sources */,
+				E2BA0CAA1EC34BF800FD7E4D /* TranslatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E2F8001EC89B050035A1EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E2F8071EC89B060035A1EC /* YaTraslatorAPITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E24217A91ECF258C00032FC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E28AA3AD1EBD2B8F0014295A /* YaTraslator */;
+			targetProxy = E24217A81ECF258C00032FC4 /* PBXContainerItemProxy */;
+		};
+		E26DCDB21ECC7A560048B5F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E28AA3AD1EBD2B8F0014295A /* YaTraslator */;
+			targetProxy = E26DCDB11ECC7A560048B5F9 /* PBXContainerItemProxy */;
+		};
+		E28AA3CC1EBD2B8F0014295A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E28AA3AD1EBD2B8F0014295A /* YaTraslator */;
+			targetProxy = E28AA3CB1EBD2B8F0014295A /* PBXContainerItemProxy */;
+		};
+		E2E2F80A1EC89B060035A1EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E28AA3AD1EBD2B8F0014295A /* YaTraslator */;
+			targetProxy = E2E2F8091EC89B060035A1EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E28AA3BA1EBD2B8F0014295A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E28AA3BB1EBD2B8F0014295A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E28AA3C21EBD2B8F0014295A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E28AA3C31EBD2B8F0014295A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E24217AB1ECF258C00032FC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YaTraslatorPerfomanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTraslatorPerfomanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaTraslator.app/YaTraslator";
+			};
+			name = Debug;
+		};
+		E24217AC1ECF258C00032FC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YaTraslatorPerfomanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTraslatorPerfomanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaTraslator.app/YaTraslator";
+			};
+			name = Release;
+		};
+		E26DCDB31ECC7A560048B5F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YaTraslatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTraslatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YaTraslator;
+			};
+			name = Debug;
+		};
+		E26DCDB41ECC7A560048B5F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YaTraslatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTraslatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YaTraslator;
+			};
+			name = Release;
+		};
+		E28AA3DC1EBD2B8F0014295A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E28AA3DD1EBD2B8F0014295A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E28AA3DF1EBD2B900014295A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 58XN93BEG2;
+				GCC_PREFIX_HEADER = YaTraslator/PrefixHeader.pch;
+				INFOPLIST_FILE = YaTraslator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTraslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E28AA3E01EBD2B900014295A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 58XN93BEG2;
+				GCC_PREFIX_HEADER = YaTraslator/PrefixHeader.pch;
+				INFOPLIST_FILE = YaTraslator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTraslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E28AA3E21EBD2B900014295A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YaTraslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTraslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaTraslator.app/YaTraslator";
+			};
+			name = Debug;
+		};
+		E28AA3E31EBD2B900014295A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YaTraslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTraslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaTraslator.app/YaTraslator";
+			};
+			name = Release;
+		};
+		E2E2F80B1EC89B060035A1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YaTraslatorAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTraslatorAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaTraslator.app/YaTraslator";
+			};
+			name = Debug;
+		};
+		E2E2F80C1EC89B060035A1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YaTraslatorAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTraslatorAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaTraslator.app/YaTraslator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E24217AA1ECF258C00032FC4 /* Build configuration list for PBXNativeTarget "YaTraslatorPerfomanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E24217AB1ECF258C00032FC4 /* Debug */,
+				E24217AC1ECF258C00032FC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E26DCDB51ECC7A560048B5F9 /* Build configuration list for PBXNativeTarget "YaTraslatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26DCDB31ECC7A560048B5F9 /* Debug */,
+				E26DCDB41ECC7A560048B5F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28AA3A91EBD2B8E0014295A /* Build configuration list for PBXProject "YaTraslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28AA3DC1EBD2B8F0014295A /* Debug */,
+				E28AA3DD1EBD2B8F0014295A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28AA3DE1EBD2B900014295A /* Build configuration list for PBXNativeTarget "YaTraslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28AA3DF1EBD2B900014295A /* Debug */,
+				E28AA3E01EBD2B900014295A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28AA3E11EBD2B900014295A /* Build configuration list for PBXNativeTarget "YaTraslatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28AA3E21EBD2B900014295A /* Debug */,
+				E28AA3E31EBD2B900014295A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2E2F80D1EC89B060035A1EC /* Build configuration list for PBXNativeTarget "YaTraslatorAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E2F80B1EC89B060035A1EC /* Debug */,
+				E2E2F80C1EC89B060035A1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E28AA3BD1EBD2B8F0014295A /* YaTraslator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E28AA3BE1EBD2B8F0014295A /* YaTraslator.xcdatamodel */,
+			);
+			currentVersion = E28AA3BE1EBD2B8F0014295A /* YaTraslator.xcdatamodel */;
+			path = YaTraslator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E28AA3A61EBD2B8E0014295A /* Project object */;
+}

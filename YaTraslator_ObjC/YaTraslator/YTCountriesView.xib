@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YTCountriesView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="256"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhp-mu-stl">
+                    <rect key="frame" x="0.0" y="40" width="600" height="216"/>
+                    <accessibility key="accessibilityConfiguration" identifier="translator_country_picker_view">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="igu-dx-Lhx"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="dzE-UF-KUV"/>
+                    </connections>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmi-Lq-Wvl">
+                    <rect key="frame" x="510" y="8" width="82" height="30"/>
+                    <accessibility key="accessibilityConfiguration" identifier="translator_country_ok_button"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="82" id="Ckl-Ky-yeJ"/>
+                        <constraint firstAttribute="height" constant="30" id="EAQ-ai-tS1"/>
+                    </constraints>
+                    <state key="normal" title="OK"/>
+                    <connections>
+                        <action selector="actionCancelButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="fov-KT-jSL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration" identifier="translate_tool_bar_countries"/>
+            <constraints>
+                <constraint firstItem="Nhp-mu-stl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IuJ-Gb-xy4"/>
+                <constraint firstItem="Qmi-Lq-Wvl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="RdH-zL-B9r"/>
+                <constraint firstAttribute="bottom" secondItem="Nhp-mu-stl" secondAttribute="bottom" id="X7m-4b-tIV"/>
+                <constraint firstItem="Qmi-Lq-Wvl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="dUq-sF-rNQ"/>
+                <constraint firstAttribute="trailing" secondItem="Nhp-mu-stl" secondAttribute="trailing" id="dYd-3t-6Xr"/>
+                <constraint firstItem="Nhp-mu-stl" firstAttribute="top" secondItem="Qmi-Lq-Wvl" secondAttribute="bottom" constant="2" id="dw2-HE-Eas"/>
+                <constraint firstItem="Qmi-Lq-Wvl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="qnx-n5-SiN"/>
+                <constraint firstAttribute="trailing" secondItem="Qmi-Lq-Wvl" secondAttribute="trailing" constant="8" id="zMG-Gh-SO7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="RdH-zL-B9r"/>
+                    <exclude reference="dUq-sF-rNQ"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cancelButton" destination="Qmi-Lq-Wvl" id="XKA-ym-UFg"/>
+                <outlet property="pickerView" destination="Nhp-mu-stl" id="Rkz-S4-owd"/>
+            </connections>
+        </view>
+    </objects>
+</document>

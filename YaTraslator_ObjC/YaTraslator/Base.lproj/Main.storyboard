@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gRF-bK-OJi">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Xg9-Gr-ilV">
+            <objects>
+                <tabBarController id="gRF-bK-OJi" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="NvB-yz-qMH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Brl-yw-28h" kind="relationship" relationship="viewControllers" id="jFM-vf-Wt7"/>
+                        <segue destination="OYV-jK-I3c" kind="relationship" relationship="viewControllers" id="G4s-J2-HrE"/>
+                        <segue destination="iPV-L4-4kk" kind="relationship" relationship="viewControllers" id="JWc-YW-k4x"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ynq-2j-PPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375" y="512"/>
+        </scene>
+        <!--Translator-->
+        <scene sceneID="I77-OG-pR0">
+            <objects>
+                <viewController id="Brl-yw-28h" customClass="YTTranslatorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j0U-ZQ-eT1"/>
+                        <viewControllerLayoutGuide type="bottom" id="S0c-hY-UyI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="grz-9I-ZFD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlP-bQ-Hja">
+                                <rect key="frame" x="450" y="285" width="130" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="translator_output_country_button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DeR-tU-IIG"/>
+                                    <constraint firstAttribute="width" constant="130" id="Vfn-t4-V7z"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="actionOutputCountryButton:" destination="Brl-yw-28h" eventType="touchUpInside" id="itF-Ye-8mu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olM-AY-Pok">
+                                <rect key="frame" x="20" y="285" width="130" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="translator_input_country_button"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="MYk-53-rYG"/>
+                                    <constraint firstAttribute="height" constant="30" id="nQB-Mj-zQV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="actionInputCountryButton:" destination="Brl-yw-28h" eventType="touchUpInside" id="azB-6x-PW6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiv-K2-4of">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="translator_swap_countries_button"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Jlx-as-Jc1"/>
+                                    <constraint firstAttribute="height" constant="30" id="dxE-a9-fey"/>
+                                </constraints>
+                                <state key="normal" title="--&gt;"/>
+                                <connections>
+                                    <action selector="actionChangeLanguagesButton:" destination="Brl-yw-28h" eventType="touchUpInside" id="awE-sL-cwp"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Привет" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VNv-Sq-q5h">
+                                <rect key="frame" x="20" y="28" width="560" height="233"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="translator_input_text_view"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="233" id="315-Nu-ZOc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Brl-yw-28h" id="zDb-FR-86J"/>
+                                </connections>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kft-k2-y0T">
+                                <rect key="frame" x="20" y="339" width="560" height="205"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="translator_output_text_view"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="205" id="MiF-mB-ulG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kft-k2-y0T" firstAttribute="trailing" secondItem="grz-9I-ZFD" secondAttribute="trailingMargin" id="0iV-Sr-TCl"/>
+                            <constraint firstItem="aiv-K2-4of" firstAttribute="centerX" secondItem="grz-9I-ZFD" secondAttribute="centerX" id="364-jM-PqI"/>
+                            <constraint firstItem="aiv-K2-4of" firstAttribute="top" secondItem="VNv-Sq-q5h" secondAttribute="bottom" constant="24" id="3fX-7P-7vu"/>
+                            <constraint firstItem="VNv-Sq-q5h" firstAttribute="trailing" secondItem="grz-9I-ZFD" secondAttribute="trailingMargin" id="C7F-nN-66l"/>
+                            <constraint firstItem="FlP-bQ-Hja" firstAttribute="top" secondItem="VNv-Sq-q5h" secondAttribute="bottom" constant="24" id="GBH-a0-NsU"/>
+                            <constraint firstItem="VNv-Sq-q5h" firstAttribute="top" secondItem="j0U-ZQ-eT1" secondAttribute="bottom" constant="8" id="LOb-Ph-72g"/>
+                            <constraint firstItem="VNv-Sq-q5h" firstAttribute="leading" secondItem="grz-9I-ZFD" secondAttribute="leadingMargin" id="LaZ-ND-mvd"/>
+                            <constraint firstItem="olM-AY-Pok" firstAttribute="top" secondItem="VNv-Sq-q5h" secondAttribute="bottom" constant="24" id="Y38-6q-35E"/>
+                            <constraint firstItem="olM-AY-Pok" firstAttribute="leading" secondItem="grz-9I-ZFD" secondAttribute="leadingMargin" id="dcY-pc-Plc"/>
+                            <constraint firstItem="kft-k2-y0T" firstAttribute="leading" secondItem="grz-9I-ZFD" secondAttribute="leadingMargin" id="hxD-FU-hpA"/>
+                            <constraint firstItem="kft-k2-y0T" firstAttribute="top" secondItem="aiv-K2-4of" secondAttribute="bottom" constant="24" id="jhg-ga-bTZ"/>
+                            <constraint firstItem="FlP-bQ-Hja" firstAttribute="trailing" secondItem="grz-9I-ZFD" secondAttribute="trailingMargin" id="xXa-EG-xaR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Translator" id="hfe-Zw-wbM"/>
+                    <connections>
+                        <outlet property="inputCountryButton" destination="olM-AY-Pok" id="68K-fa-211"/>
+                        <outlet property="inputTextView" destination="VNv-Sq-q5h" id="LBz-x0-u4F"/>
+                        <outlet property="outputCountryButton" destination="FlP-bQ-Hja" id="5Ug-q5-DR1"/>
+                        <outlet property="outputTextView" destination="kft-k2-y0T" id="CPp-QD-DK8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FxO-QE-PMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="12"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="FjZ-v9-DPF">
+            <objects>
+                <viewController id="OYV-jK-I3c" customClass="YTHistoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VLf-rC-lsP"/>
+                        <viewControllerLayoutGuide type="bottom" id="eiN-cP-ry5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HWB-A9-Ts9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iGs-iE-rOh">
+                                <rect key="frame" x="20" y="20" width="560" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="OYV-jK-I3c" id="621-zs-1Pj"/>
+                                    <outlet property="delegate" destination="OYV-jK-I3c" id="QFp-oE-X4H"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iGs-iE-rOh" firstAttribute="top" secondItem="VLf-rC-lsP" secondAttribute="bottom" id="2hV-jn-Plg"/>
+                            <constraint firstItem="eiN-cP-ry5" firstAttribute="top" secondItem="iGs-iE-rOh" secondAttribute="bottom" id="GOC-gv-Cdg"/>
+                            <constraint firstItem="iGs-iE-rOh" firstAttribute="leading" secondItem="HWB-A9-Ts9" secondAttribute="leadingMargin" id="apX-t9-Ol7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iGs-iE-rOh" secondAttribute="trailing" id="qSB-hr-kdA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="History" id="oMy-bE-vra"/>
+                    <connections>
+                        <outlet property="tableView" destination="iGs-iE-rOh" id="R87-2d-NaV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xXV-hk-Ra4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="757"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="G0q-z7-WnC">
+            <objects>
+                <viewController id="iPV-L4-4kk" customClass="YTSettingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GcK-gB-Dez"/>
+                        <viewControllerLayoutGuide type="bottom" id="IQJ-R0-Scv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1aD-2z-3vW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeY-jo-ePP">
+                                <rect key="frame" x="28" y="28" width="544" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="setting_clear_history_button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Sg-hp-BMM"/>
+                                </constraints>
+                                <state key="normal" title="Очистить историю"/>
+                                <connections>
+                                    <action selector="actionClearhistoryButton:" destination="iPV-L4-4kk" eventType="touchUpInside" id="0ap-xN-3mE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VeY-jo-ePP" firstAttribute="leading" secondItem="1aD-2z-3vW" secondAttribute="leadingMargin" constant="8" id="bq4-tt-2Ts"/>
+                            <constraint firstItem="VeY-jo-ePP" firstAttribute="top" secondItem="GcK-gB-Dez" secondAttribute="bottom" constant="8" id="qaY-Ff-Z7G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VeY-jo-ePP" secondAttribute="trailing" constant="8" id="urE-3q-ifw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setting" id="m9l-bf-8NM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lcr-6a-Q9r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="1533"/>
+        </scene>
+    </scenes>
+</document>
