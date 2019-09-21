@@ -10,7 +10,7 @@ import UIKit
 
 struct SupportLanguage {
     static let KeySupportLangs = "langs"
-    static let KeySupportLanguage = "dirs"
+    static let KeySupportDirs = "dirs"
     
     var outputCountries = [Country]()
     var inputCountry:Country?

@@ -6,11 +6,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YaTranslator/Model/Support/GetLangs.swift"
-            timestampString = "559353511.318101"
+            timestampString = "590755761.719726"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YaTranslator/Model/Support/SupportLanguage.swift"
-            timestampString = "558827921.970566"
+            timestampString = "590755761.720252"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -41,14 +41,46 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "YaTranslator/Model/Support/GetLangs.swift"
-            timestampString = "559353511.318325"
+            filePath = "YaTranslator/Service/CoreData/CoreDataService.swift"
+            timestampString = "590755761.720353"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "addInputOutputCountryCode(_:langs:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "getOutputCountriesByCode(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YaTranslator.CoreDataService.getOutputCountriesByCode(Swift.String) -&gt; Swift.Array&lt;YaTranslator.Country&gt;"
+                  moduleName = "YaTranslator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diman/GitHub/YaTraslator/YaTranslator_Swift/YaTranslator/Service/CoreData/CoreDataService.swift"
+                  timestampString = "590754728.972437"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "1197">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YaTranslator.CoreDataService.getOutputCountriesByCode(Swift.String) -&gt; Swift.Array&lt;YaTranslator.Country&gt;"
+                  moduleName = "YaTranslator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diman/GitHub/YaTraslator/YaTranslator_Swift/YaTranslator/Service/CoreData/CoreDataService.swift"
+                  timestampString = "590754728.97679"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "3353">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -57,8 +89,48 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
+            filePath = "YaTranslator/Service/CoreData/CoreDataService.swift"
+            timestampString = "590755761.720421"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "getOutputCountriesByCode(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
             filePath = "YaTranslator/Model/Support/GetLangs.swift"
-            timestampString = "559353511.318416"
+            timestampString = "590755761.720484"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "addInputOutputCountryCode(_:langs:)"
+            landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "po inputOutputCode">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YaTranslator/Model/Support/GetLangs.swift"
+            timestampString = "590755817.06959"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -67,14 +139,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "YaTranslator.GetLangs.addInputOutputCountryCode(Swift.String, langs: Swift.Dictionary&lt;Swift.String, Swift.String&gt;) -&gt; ()"
                   moduleName = "YaTranslator"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/diman/Documents/xcode_workspace_swift/YaTranslator/YaTranslator/Model/Support/GetLangs.swift"
-                  timestampString = "558790656.404839"
+                  urlString = "file:///Users/diman/GitHub/YaTraslator/YaTranslator_Swift/YaTranslator/Model/Support/GetLangs.swift"
+                  timestampString = "590755817.0788341"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "21"
@@ -82,14 +154,14 @@
                   offsetFromSymbolStart = "865">
                </Location>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (YaTranslator.SupportLanguage) -&gt; Swift.Bool in YaTranslator.GetLangs.addInputOutputCountryCode(Swift.String, langs: Swift.Dictionary&lt;Swift.String, Swift.String&gt;) -&gt; ()"
                   moduleName = "YaTranslator"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/diman/Documents/xcode_workspace_swift/YaTranslator/YaTranslator/Model/Support/GetLangs.swift"
-                  timestampString = "558790656.40898"
+                  urlString = "file:///Users/diman/GitHub/YaTraslator/YaTranslator_Swift/YaTranslator/Model/Support/GetLangs.swift"
+                  timestampString = "590755817.082251"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
@@ -97,6 +169,22 @@
                   offsetFromSymbolStart = "47">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YaTranslator/Model/Support/GetLangs.swift"
+            timestampString = "590755903.10937"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "addInputOutputCountryCode(_:langs:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

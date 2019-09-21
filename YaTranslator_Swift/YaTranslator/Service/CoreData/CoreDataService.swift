@@ -57,12 +57,14 @@ struct CoreDataService {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: CoreDataService.SupportEntityName)
         let predicate = NSPredicate(format: "inputCountryCode == %@", code)
             request.predicate = predicate
+        
         var outputsCountries = [Country]()
         let support = try? self.managedObjectContext.fetch(request).first as! SupportEntity
         for coutryEntity in support?.countries?.allObjects as! [CountryEntity] {
             let country = Country(code: coutryEntity.code!, name: coutryEntity.name!)
             outputsCountries.append(country)
         }
+        
         return outputsCountries;
     }
     

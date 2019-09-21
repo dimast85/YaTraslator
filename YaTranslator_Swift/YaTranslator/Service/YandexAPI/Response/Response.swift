@@ -15,20 +15,34 @@ class Response: NSObject {
     lazy var apiService  = { YandexAPIService() }
     
     
-    init(_ object:NSObject, andDelegate delegate:YandexAPIServiceDelegate) {
+    init(_ object:NSObject?, andDelegate delegate:YandexAPIServiceDelegate) {
         self.object = object
         self.delegate = delegate
     }
     
-    func setResponseData(_ data:Data, orError error:Error!) {
+    final func setResponseData(_ data:Data, orError error:Error!) {
         if error != nil {
             serverError(error!)
         } else {
-            
+            do {
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
+                    if let code = json["code"] == nil ? 0 : Int((json["code"] as? String)!) {
+                        if code == 200 || code == 0 {
+                            parseServerDictionary(json)
+                        } else {
+                            let respError = NSError(domain:"",code:code, userInfo:[ErrorTextKey:"Ошибка данных"])
+                            serverError(respError)
+                        }
+                    }
+                }
+                
+            } catch {
+                serverError(error);
+            }
         }
     }
     
-    func parseServerDictionary(_ serverDictionary:[String:String]) {
+    func parseServerDictionary(_ serverDictionary:[String:Any]) {
         
     }
     
