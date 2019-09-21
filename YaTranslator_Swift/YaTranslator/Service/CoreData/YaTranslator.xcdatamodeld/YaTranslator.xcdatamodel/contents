@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G7024" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="CountryEntity" representedClassName="CountryEntity" syncable="YES" codeGenerationType="class">
         <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="language" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LanguageEntity" inverseName="country" inverseEntity="LanguageEntity" syncable="YES"/>
         <relationship name="support" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SupportEntity" inverseName="countries" inverseEntity="SupportEntity" syncable="YES"/>
+    </entity>
+    <entity name="InputLanguageEntity" representedClassName="InputLanguageEntity" parentEntity="LanguageEntity" syncable="YES" codeGenerationType="class">
+        <relationship name="translator" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TranslatorEntity" inverseName="inputLanguage" inverseEntity="TranslatorEntity" syncable="YES"/>
+    </entity>
+    <entity name="LanguageEntity" representedClassName="LanguageEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CountryEntity" inverseName="language" inverseEntity="CountryEntity" syncable="YES"/>
+    </entity>
+    <entity name="OutputLanguageEntity" representedClassName="OutputLanguageEntity" parentEntity="LanguageEntity" syncable="YES" codeGenerationType="class">
+        <relationship name="translator" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TranslatorEntity" inverseName="outputLanguage" inverseEntity="TranslatorEntity" syncable="YES"/>
     </entity>
     <entity name="SupportEntity" representedClassName="SupportEntity" syncable="YES" codeGenerationType="class">
         <attribute name="inputCountryCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="inputCountryName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="countries" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CountryEntity" inverseName="support" inverseEntity="CountryEntity" syncable="YES"/>
     </entity>
+    <entity name="TranslatorEntity" representedClassName="TranslatorEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="inputLanguage" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="InputLanguageEntity" inverseName="translator" inverseEntity="InputLanguageEntity" syncable="YES"/>
+        <relationship name="outputLanguage" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="OutputLanguageEntity" inverseName="translator" inverseEntity="OutputLanguageEntity" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="CountryEntity" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="SupportEntity" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="CountryEntity" positionX="331" positionY="410" width="128" height="103"/>
+        <element name="SupportEntity" positionX="-135" positionY="432" width="128" height="90"/>
+        <element name="TranslatorEntity" positionX="-135" positionY="339" width="128" height="88"/>
+        <element name="InputLanguageEntity" positionX="25" positionY="282" width="128" height="60"/>
+        <element name="OutputLanguageEntity" positionX="133" positionY="354" width="128" height="60"/>
+        <element name="LanguageEntity" positionX="126" positionY="153" width="128" height="73"/>
     </elements>
 </model>

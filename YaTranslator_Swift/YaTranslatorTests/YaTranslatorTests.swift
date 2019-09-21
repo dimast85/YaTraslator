@@ -21,16 +21,92 @@ class YaTranslatorTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTranslatorSetText() {
+        let inputCountry = Country(code: "ru", name: "русский")
+        let outputCountry = Country(code: "en", name: "английский")
+        let translator = Traslator(inputCountry: inputCountry, outputCountry: outputCountry);
+        XCTAssertNotNil(translator.inputLanguage)
+        XCTAssertNotNil(translator.outputLanguage)
+        XCTAssertEqual(translator.inputLanguage.code, "ru")
+        XCTAssertEqual(translator.inputLanguage.name, "русский")
+        XCTAssertEqual(translator.outputLanguage.code, "en")
+        XCTAssertEqual(translator.outputLanguage.name, "английский")
+        XCTAssertEqual(translator.status, .Active)
+        
+        let text = "Hi"
+        translator.setInputText(text)
+        XCTAssertEqual(translator.inputLanguage.text, text)
+        
+        let requestParams = translator.requestParams
+        XCTAssertEqual(requestParams["lang"], "ru-en")
+        XCTAssertEqual(requestParams["text"], text)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testChangeLanguages() {
+        let inputCountry = Country(code: "ru", name: "русский")
+        let outputCountry = Country(code: "en", name: "английский")
+        let translator = Traslator(inputCountry: inputCountry, outputCountry: outputCountry);
+        let text = "Hi"
+        translator.setInputText(text)
+        
+        // SwapLanguages
+        translator.swapLanguages()
+        XCTAssertEqual(translator.inputLanguage.code, "en")
+        XCTAssertEqual(translator.inputLanguage.name, "английский")
+        XCTAssertEqual(translator.outputLanguage.code, "ru")
+        XCTAssertEqual(translator.outputLanguage.name, "русский")
+        
+        XCTAssertEqual(translator.inputLanguage.text, text)
+        XCTAssertEqual(translator.outputLanguage.text, "")
     }
     
+    func testTraslatorAddInputCountry() {
+        let inputCountry = Country(code: "ru", name: "русский")
+        let outputCountry = Country(code: "en", name: "английский")
+        let translator = Traslator(inputCountry: inputCountry, outputCountry: outputCountry);
+        
+        let newInputCountry = Country(code: "fr", name: "французкий")
+        let newOutputCountry = Country(code: "ita", name: "итальянский")
+        
+        translator.addInputCountry(country: newInputCountry)
+        translator.addOunputCountry(country: newOutputCountry)
+        
+        XCTAssertEqual(translator.inputLanguage.code, "fr")
+        XCTAssertEqual(translator.inputLanguage.name, "французкий")
+        XCTAssertEqual(translator.outputLanguage.code, "ita")
+        XCTAssertEqual(translator.outputLanguage.name, "итальянский")
+    }
+    
+    func testTranslatorSaveToCoreData() {
+        let inputCountry = Country(code: "ru", name: "русский")
+        let outputCountry = Country(code: "en", name: "английский")
+        let translator = Traslator(inputCountry: inputCountry, outputCountry: outputCountry);
+        
+        let text = "Hi"
+        let outText = "Привет"
+        translator.setInputText(text)
+        
+        let serverJSON = ["code":200,
+                          "lang":"ru-en",
+                          "text":outText] as [String : Any]
+        translator.parseJSON(json: serverJSON)
+       
+        XCTAssertEqual(translator.inputLanguage.text, text)
+        XCTAssertEqual(translator.outputLanguage.text, outText)
+        
+        let storage = CoreDataService()
+        storage.saveTranslator(translator: translator)
+        
+        let translators = storage.getTranslators(status: .Active)
+        XCTAssertEqual(translators.count, 1)
+        
+        let rTranslator = translators.first;
+        XCTAssertEqual(rTranslator?.inputLanguage.text, text)
+        XCTAssertEqual(rTranslator?.outputLanguage.text, outText)
+        XCTAssertEqual(rTranslator?.status, Traslator.Status.Active)
+        XCTAssertEqual(rTranslator?.inputLanguage.code, "ru")
+        XCTAssertEqual(rTranslator?.inputLanguage.name, "русский")
+        XCTAssertEqual(rTranslator?.outputLanguage.code, "en")
+        XCTAssertEqual(rTranslator?.outputLanguage.name, "английский")
+    }
 }

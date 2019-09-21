@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YaTranslator/Model/Support/SupportLanguage.swift"
-            timestampString = "590757270.549597"
+            timestampString = "590777541.1187381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -26,45 +26,21 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YaTranslator/Service/CoreData/CoreDataService.swift"
-            timestampString = "590757270.54969"
+            timestampString = "590777541.118831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "getOutputCountriesByCode(_:)"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "saveTranslator(translator:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "YaTranslator.CoreDataService.getOutputCountriesByCode(Swift.String) -&gt; Swift.Array&lt;YaTranslator.Country&gt;"
-                  moduleName = "YaTranslator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/diman/GitHub/YaTraslator/YaTranslator_Swift/YaTranslator/Service/CoreData/CoreDataService.swift"
-                  timestampString = "590754728.972437"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "1197">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "YaTranslator.CoreDataService.getOutputCountriesByCode(Swift.String) -&gt; Swift.Array&lt;YaTranslator.Country&gt;"
-                  moduleName = "YaTranslator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/diman/GitHub/YaTraslator/YaTranslator_Swift/YaTranslator/Service/CoreData/CoreDataService.swift"
-                  timestampString = "590754728.97679"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "3353">
-               </Location>
-            </Locations>
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "po inputEntity.text">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,12 +50,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YaTranslator/Service/CoreData/CoreDataService.swift"
-            timestampString = "590757270.549765"
+            timestampString = "590777541.118908"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "getOutputCountriesByCode(_:)"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "translator(translatorEntity:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

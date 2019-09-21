@@ -10,6 +10,8 @@
 		E21A8CF821554EB2004B90FE /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A8CF721554EB2004B90FE /* CoreDataService.swift */; };
 		E21A8CFD21594B59004B90FE /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A8CFC21594B59004B90FE /* Response.swift */; };
 		E21A8CFF21594DA7004B90FE /* ResponseSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A8CFE21594DA7004B90FE /* ResponseSupport.swift */; };
+		E24DD55323364DD60063A8E6 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DD55223364DD60063A8E6 /* Translator.swift */; };
+		E24DD55523364DE70063A8E6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DD55423364DE70063A8E6 /* Language.swift */; };
 		E25F8C7E214E2E080099A266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8C7D214E2E080099A266 /* AppDelegate.swift */; };
 		E25F8C80214E2E080099A266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8C7F214E2E080099A266 /* ViewController.swift */; };
 		E25F8C83214E2E080099A266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25F8C81214E2E080099A266 /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		E21A8CF721554EB2004B90FE /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		E21A8CFC21594B59004B90FE /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		E21A8CFE21594DA7004B90FE /* ResponseSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSupport.swift; sourceTree = "<group>"; };
+		E24DD55223364DD60063A8E6 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Translator.swift; path = YaTranslator/Model/Translator/Translator.swift; sourceTree = SOURCE_ROOT; };
+		E24DD55423364DE70063A8E6 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Language.swift; path = YaTranslator/Model/Translator/Language.swift; sourceTree = SOURCE_ROOT; };
 		E25F8C7A214E2E080099A266 /* YaTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25F8C7D214E2E080099A266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E25F8C7F214E2E080099A266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,15 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		E24DD55623366DB10063A8E6 /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				E24DD55223364DD60063A8E6 /* Translator.swift */,
+				E24DD55423364DE70063A8E6 /* Language.swift */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
 		E25F8C71214E2E080099A266 = {
 			isa = PBXGroup;
 			children = (
@@ -177,16 +190,9 @@
 			isa = PBXGroup;
 			children = (
 				E25F8CB0214E2FF00099A266 /* Support */,
-				E25F8CAF214E2FE70099A266 /* Translator */,
+				E24DD55623366DB10063A8E6 /* Translator */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		E25F8CAF214E2FE70099A266 /* Translator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Translator;
 			sourceTree = "<group>";
 		};
 		E25F8CB0214E2FF00099A266 /* Support */ = {
@@ -339,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24DD55323364DD60063A8E6 /* Translator.swift in Sources */,
 				E21A8CFF21594DA7004B90FE /* ResponseSupport.swift in Sources */,
 				E28A666221570F0E0018852B /* YandexAPIService.swift in Sources */,
 				E21A8CF821554EB2004B90FE /* CoreDataService.swift in Sources */,
@@ -347,6 +354,7 @@
 				E21A8CFD21594B59004B90FE /* Response.swift in Sources */,
 				E25F8C86214E2E080099A266 /* YaTranslator.xcdatamodeld in Sources */,
 				E25F8CB2214E30150099A266 /* GetLangs.swift in Sources */,
+				E24DD55523364DE70063A8E6 /* Language.swift in Sources */,
 				E25F8CB6214E30510099A266 /* Country.swift in Sources */,
 				E25F8C7E214E2E080099A266 /* AppDelegate.swift in Sources */,
 			);

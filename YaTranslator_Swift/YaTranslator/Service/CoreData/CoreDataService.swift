@@ -10,7 +10,11 @@ import UIKit
 import CoreData
 
 struct CoreDataService {
+    // MARK:-
     static let SupportEntityName = "SupportEntity"
+    static let TranslatorEntityName = "TranslatorEntity"
+    static let InputLanguageEntityName = "InputLanguageEntity"
+    static let OutputLanguageEntityName = "OutputLanguageEntity"
     
     var managedObjectContext:NSManagedObjectContext {
         get {
@@ -19,6 +23,7 @@ struct CoreDataService {
         }
     }
     
+    // MARK:-
     public func saveSupportLanguages(_ supportLanguages:[SupportLanguage]) {
         self.removeAllSupportLanguages()
         
@@ -42,6 +47,43 @@ struct CoreDataService {
         }
     }
     
+    func saveTranslator(translator:Traslator) {
+        // Remove Active
+        if translator.status == .Active {
+            let activeTranslators = self.searchTranslateEntitys(status: translator.status)
+            for aTranslator in activeTranslators {
+                self.managedObjectContext.delete(aTranslator)
+            }
+        }
+        
+        // Create Translator Entity
+        let translatorEntity = NSEntityDescription.insertNewObject(forEntityName: CoreDataService.TranslatorEntityName, into: self.managedObjectContext) as! TranslatorEntity
+        translatorEntity.status = Int16(translator.status.rawValue)
+        
+        
+        // Input
+        let inputEntity = NSEntityDescription.insertNewObject(forEntityName: CoreDataService.InputLanguageEntityName, into: self.managedObjectContext) as! InputLanguageEntity
+        inputEntity.text = translator.inputLanguage.text
+        
+        let coutryInEntity = NSEntityDescription.insertNewObject(forEntityName: "CountryEntity", into: self.managedObjectContext) as! CountryEntity
+        coutryInEntity.code = translator.inputLanguage.code
+        coutryInEntity.name = translator.inputLanguage.name
+        inputEntity.country = coutryInEntity
+        translatorEntity.inputLanguage = inputEntity
+        
+        // Output
+        let outputEntity = NSEntityDescription.insertNewObject(forEntityName: CoreDataService.OutputLanguageEntityName, into: self.managedObjectContext) as! OutputLanguageEntity
+        outputEntity.text = translator.outputLanguage.text
+        let coutryOutEntity = NSEntityDescription.insertNewObject(forEntityName: "CountryEntity", into: self.managedObjectContext) as! CountryEntity
+        coutryOutEntity.code = translator.outputLanguage.code
+        coutryOutEntity.name = translator.outputLanguage.name
+        outputEntity.country = coutryOutEntity
+        translatorEntity.outputLanguage = outputEntity
+        
+        self.saveContext()
+    }
+    
+    // MARK:-
     func getInputCountries() -> [Country] {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: CoreDataService.SupportEntityName)
         let supports = try? self.managedObjectContext.fetch(request)
@@ -68,6 +110,17 @@ struct CoreDataService {
         return outputsCountries;
     }
     
+    func getTranslators(status: Traslator.Status) -> [Traslator] {
+        let translatorEntitys = self.searchTranslateEntitys(status: status)
+        var translators = [Traslator]()
+        for entity in translatorEntitys {
+            let translator = self.translator(translatorEntity: entity)
+            translators.append(translator)
+        }
+        return translators
+    }
+    
+    // MARK: -
     private func removeAllSupportLanguages() {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: CoreDataService.SupportEntityName)
         let result = try? self.managedObjectContext.fetch(request)
@@ -76,6 +129,29 @@ struct CoreDataService {
         }
     }
     
+    
+    // MARK:-
+    func translator(translatorEntity:TranslatorEntity) -> Traslator {
+        let inCountry = Country(code: (translatorEntity.inputLanguage?.country?.code)!, name: (translatorEntity.inputLanguage?.country?.name)!)
+        let outCountry = Country(code: (translatorEntity.outputLanguage?.country?.code)!, name: (translatorEntity.outputLanguage?.country?.name)!)
+        let translator = Traslator(inputCountry: inCountry, outputCountry: outCountry)
+            translator.status = Traslator.Status(rawValue: Int(translatorEntity.status))!
+            translator.inputLanguage.text = (translatorEntity.inputLanguage?.text)!
+            translator.outputLanguage.text = (translatorEntity.outputLanguage?.text)!
+        return translator
+    }
+    
+    // MARK:-
+    func searchTranslateEntitys(status:Traslator.Status) -> [TranslatorEntity] {
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: CoreDataService.TranslatorEntityName)
+        let predicate = NSPredicate(format: "SELF.status == \(status.rawValue)")
+            request.predicate = predicate
+        
+        let translators = try? self.managedObjectContext.fetch(request) as! [TranslatorEntity]
+        return translators!
+    }
+    
+    // MARK: -
     private func saveContext() {
         let app = UIApplication.shared.delegate as! AppDelegate
             app.saveContext()
