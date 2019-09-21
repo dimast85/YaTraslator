@@ -8,7 +8,12 @@
 
 import UIKit
 
-struct Country {
-    var code:String
-    var name:String    
+class Country {
+    var code:String = ""
+    var name:String = ""
+    
+    init(code:String, name:String) {
+        self.code = code;
+        self.name = name;
+    }
 }

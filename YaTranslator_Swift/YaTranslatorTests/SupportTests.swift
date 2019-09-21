@@ -96,6 +96,7 @@ class SupportTests: XCTestCase {
     
     func testSupportResponse() {
         let expectation = self.expectation(description: "SupportExpectation")
+        self.expectation = expectation
         
         let response = ResponseSupport(nil, andDelegate: self as YandexAPIServiceDelegate)
         let serverDictionary = [SupportLanguage.KeySupportDirs:["ru-en","ru-pl","ru-fr","en-ru","en-fr"],

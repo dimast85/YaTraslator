@@ -24,17 +24,16 @@ struct GetLangs {
             } else {
                 return false
             }
-        }
+        }.first
         
-        if supportLang.count == 0 {
+        if supportLang == nil {
             // Create New
             let supportLanguage = SupportLanguage(inputOutputCode: inputOutputCode, andlangs: langs)
             self.supports.append(supportLanguage)
             
         } else {
             // Add to Current
-            var support = supportLang.first! as SupportLanguage
-            support.addInputOutputCode(inputOutputCode, andLangs: langs)
+            supportLang?.addInputOutputCode(inputOutputCode, andLangs: langs)
         }
     }
 }

@@ -1,4 +1,4 @@
-//
+
 //  ResponseSupport.swift
 //  YaTranslator
 //
@@ -21,6 +21,6 @@ class ResponseSupport : Response {
         let cDataService = CoreDataService()
         cDataService.saveSupportLanguages(getLangs.supports)
         
-        self.delegate .yandexSupportLanguages(self.apiService(), didSupportLanguages: getLangs.supports)
+        self.delegate.yandexSupportLanguages(self.apiService(), didSupportLanguages: getLangs.supports)
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct SupportLanguage {
+class SupportLanguage {
     static let KeySupportLangs = "langs"
     static let KeySupportDirs = "dirs"
     
@@ -19,7 +19,7 @@ struct SupportLanguage {
         self.addInputOutputCode(inputOutputCode, andLangs: langs)
     }
     
-    mutating func addInputOutputCode(_ inputOutputCode:String, andLangs langs:[String: String]) {
+    func addInputOutputCode(_ inputOutputCode:String, andLangs langs:[String: String]) {
         let firstSpace = inputOutputCode.index(of: "-")
         if firstSpace == nil {
             return
