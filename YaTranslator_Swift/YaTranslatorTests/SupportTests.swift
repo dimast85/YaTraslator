@@ -119,6 +119,10 @@ class SupportTests: XCTestCase {
 }
 
 extension SupportTests:YandexAPIServiceDelegate {
+    func yandex(_ service: YandexAPIService, didTranslate translator: Traslator) {
+        
+    }
+    
     func yandexFail(_ service: YandexAPIService, didFail error: Error) {
         XCTFail(error.localizedDescription)
         expectation?.fulfill()
@@ -147,4 +151,5 @@ extension SupportTests:YandexAPIServiceDelegate {
         
         expectation?.fulfill()
     }
+    
 }

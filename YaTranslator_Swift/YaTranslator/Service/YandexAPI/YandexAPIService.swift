@@ -14,6 +14,7 @@ let ErrorTextKey = "ErrorTextKey"
 protocol YandexAPIServiceDelegate {
     func yandexSupportLanguages(_ service:YandexAPIService, didSupportLanguages supports:[SupportLanguage])
     func yandexFail(_ service:YandexAPIService, didFail error:Error)
+    func yandex(_ service:YandexAPIService, didTranslate translator:Traslator)
 }
 
 struct YandexAPIService {

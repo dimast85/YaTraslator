@@ -13,10 +13,6 @@ struct GetLangs {
     
     mutating func addInputOutputCountryCode(_ inputOutputCode:String, langs:[String:String]) {
         let firstSpace = inputOutputCode.index(of: "-")
-        if firstSpace == nil {
-            return
-        }
-        
         let inputCode = String(inputOutputCode.prefix(upTo: firstSpace!))
         let supportLang = self.supports.filter { (sp:SupportLanguage) -> Bool in
             if sp.inputCountry!.code == inputCode {

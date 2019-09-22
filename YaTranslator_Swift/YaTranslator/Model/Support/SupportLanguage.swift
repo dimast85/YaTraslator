@@ -21,10 +21,6 @@ class SupportLanguage {
     
     func addInputOutputCode(_ inputOutputCode:String, andLangs langs:[String: String]) {
         let firstSpace = inputOutputCode.index(of: "-")
-        if firstSpace == nil {
-            return
-        }
-        
         let code = String(inputOutputCode.prefix(upTo: firstSpace!))
         let name = langs[String(code)] //as! String
         if code != "" && (name != nil) {

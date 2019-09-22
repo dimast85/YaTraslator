@@ -48,6 +48,10 @@ struct CoreDataService {
     }
     
     func saveTranslator(translator:Traslator) {
+        if translator.inputLanguage.text == translator.outputLanguage.text {
+            return
+        }
+        
         // Remove Active
         if translator.status == .Active {
             let activeTranslators = self.searchTranslateEntitys(status: translator.status)
@@ -120,6 +124,21 @@ struct CoreDataService {
         return translators
     }
     
+    func translatorDefault() -> Traslator? {
+        let inputCountries = self.getInputCountries()
+        if inputCountries.count == 0 {
+            return nil
+        }
+        
+        let code = "ru"
+        let inCountry = inputCountries.filter { $0.code == "ru" }.first
+        let outputCountries = self.getOutputCountriesByCode(code)
+        let outCountry = outputCountries.filter { $0.code == "en" }.first
+        
+        let translator = Traslator(inputCountry: inCountry!, outputCountry: outCountry!)
+        return translator
+    }
+    
     // MARK: -
     private func removeAllSupportLanguages() {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: CoreDataService.SupportEntityName)
@@ -127,6 +146,27 @@ struct CoreDataService {
         for obj in result as! [NSManagedObject] {
             self.managedObjectContext .delete(obj)
         }
+    }
+    
+    /// Удалаяем все
+    /// - Warning: Только для UnitTest
+    func removeAll() {
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: CoreDataService.TranslatorEntityName)
+        let translators = try? self.managedObjectContext.fetch(request) as! [TranslatorEntity]
+        for entity in translators! {
+            self.managedObjectContext.delete(entity)
+        }
+        
+        self.removeAllSupportLanguages()
+    }
+    
+    
+    func clearHistory() {
+        let translators = self.searchTranslateEntitys(status: Traslator.Status.History)
+        for translate in translators {
+            self.managedObjectContext.delete(translate)
+        }
+        self.saveContext()
     }
     
     

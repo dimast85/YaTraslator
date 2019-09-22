@@ -56,7 +56,8 @@ extension Traslator {
     }
     
     func parseJSON(json:[String:Any]) {
-        let text = json["text"] as? String
+        let texts = json["text"] as? [String]
+        let text = texts?.first
         self.outputLanguage.text = text!
     }
 }

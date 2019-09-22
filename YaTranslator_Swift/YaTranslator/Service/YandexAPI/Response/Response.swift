@@ -9,13 +9,13 @@
 import Foundation
 
 class Response: NSObject {
-    var object:NSObject?
+    var object:Any?
     var delegate:YandexAPIServiceDelegate
     
     lazy var apiService  = { YandexAPIService() }
     
     
-    init(_ object:NSObject?, andDelegate delegate:YandexAPIServiceDelegate) {
+    init(_ object:Any?, andDelegate delegate:YandexAPIServiceDelegate) {
         self.object = object
         self.delegate = delegate
     }

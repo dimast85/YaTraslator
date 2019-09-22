@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YaTranslator/Model/Support/SupportLanguage.swift"
-            timestampString = "590777541.1187381"
+            timestampString = "590844379.27665"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "addInputOutputCode(_:andLangs:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YaTranslator/Service/CoreData/CoreDataService.swift"
-            timestampString = "590777541.118831"
+            timestampString = "590844379.2767349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "saveTranslator(translator:)"
             landmarkType = "7">
             <Actions>
@@ -50,11 +50,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YaTranslator/Service/CoreData/CoreDataService.swift"
-            timestampString = "590777541.118908"
+            timestampString = "590844379.276809"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "translator(translatorEntity:)"
             landmarkType = "7">
          </BreakpointContent>
