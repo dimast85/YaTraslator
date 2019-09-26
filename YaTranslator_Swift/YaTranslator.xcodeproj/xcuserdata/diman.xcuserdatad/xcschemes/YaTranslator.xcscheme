@@ -39,6 +39,26 @@
                ReferencedContainer = "container:YaTranslator.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E25F8C9B214E2E0F0099A266"
+               BuildableName = "YaTranslatorUITests.xctest"
+               BlueprintName = "YaTranslatorUITests"
+               ReferencedContainer = "container:YaTranslator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E283C655233D659200EC2D88"
+               BuildableName = "YaTranslatorAPITests.xctest"
+               BlueprintName = "YaTranslatorAPITests"
+               ReferencedContainer = "container:YaTranslator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

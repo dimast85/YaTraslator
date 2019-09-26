@@ -18,5 +18,15 @@ protocol YandexAPIServiceDelegate {
 }
 
 struct YandexAPIService {
+    enum Query:String {
+        case Translate = "translate"
+        case Support = "getLangs"
+    }
     
+    let YandexURL = ""
+    let API_KEY = ""
+    
+    func requestQuery(_ query:Query, andParams params:[String:Any], andDelegate delegate:YandexAPIServiceDelegate) {
+        
+    }
 }

@@ -25,6 +25,7 @@
 		E25F8CB4214E30290099A266 /* SupportLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8CB3214E30290099A266 /* SupportLanguage.swift */; };
 		E25F8CB6214E30510099A266 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8CB5214E30510099A266 /* Country.swift */; };
 		E25F8CB8214E30A20099A266 /* SupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8CB7214E30A20099A266 /* SupportTests.swift */; };
+		E283C659233D659200EC2D88 /* YaTranslatorAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283C658233D659200EC2D88 /* YaTranslatorAPITests.swift */; };
 		E28A666221570F0E0018852B /* YandexAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A666121570F0E0018852B /* YandexAPIService.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,13 @@
 			remoteInfo = YaTranslator;
 		};
 		E25F8C9D214E2E0F0099A266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25F8C72214E2E080099A266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25F8C79214E2E080099A266;
+			remoteInfo = YaTranslator;
+		};
+		E283C65B233D659200EC2D88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E25F8C72214E2E080099A266 /* Project object */;
 			proxyType = 1;
@@ -70,6 +78,9 @@
 		E25F8CB3214E30290099A266 /* SupportLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportLanguage.swift; sourceTree = "<group>"; };
 		E25F8CB5214E30510099A266 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		E25F8CB7214E30A20099A266 /* SupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportTests.swift; sourceTree = "<group>"; };
+		E283C656233D659200EC2D88 /* YaTranslatorAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaTranslatorAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E283C658233D659200EC2D88 /* YaTranslatorAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaTranslatorAPITests.swift; sourceTree = "<group>"; };
+		E283C65A233D659200EC2D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E28A666121570F0E0018852B /* YandexAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +100,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E25F8C99214E2E0F0099A266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E283C653233D659200EC2D88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -141,6 +159,7 @@
 				E25F8C7C214E2E080099A266 /* YaTranslator */,
 				E25F8C94214E2E0E0099A266 /* YaTranslatorTests */,
 				E25F8C9F214E2E0F0099A266 /* YaTranslatorUITests */,
+				E283C657233D659200EC2D88 /* YaTranslatorAPITests */,
 				E25F8C7B214E2E080099A266 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,6 +170,7 @@
 				E25F8C7A214E2E080099A266 /* YaTranslator.app */,
 				E25F8C91214E2E0E0099A266 /* YaTranslatorTests.xctest */,
 				E25F8C9C214E2E0F0099A266 /* YaTranslatorUITests.xctest */,
+				E283C656233D659200EC2D88 /* YaTranslatorAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +226,15 @@
 				E25F8CB5214E30510099A266 /* Country.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		E283C657233D659200EC2D88 /* YaTranslatorAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				E283C658233D659200EC2D88 /* YaTranslatorAPITests.swift */,
+				E283C65A233D659200EC2D88 /* Info.plist */,
+			);
+			path = YaTranslatorAPITests;
 			sourceTree = "<group>";
 		};
 		E28A666021570ECB0018852B /* YandexAPI */ = {
@@ -273,6 +302,24 @@
 			productReference = E25F8C9C214E2E0F0099A266 /* YaTranslatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E283C655233D659200EC2D88 /* YaTranslatorAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E283C65F233D659200EC2D88 /* Build configuration list for PBXNativeTarget "YaTranslatorAPITests" */;
+			buildPhases = (
+				E283C652233D659200EC2D88 /* Sources */,
+				E283C653233D659200EC2D88 /* Frameworks */,
+				E283C654233D659200EC2D88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E283C65C233D659200EC2D88 /* PBXTargetDependency */,
+			);
+			name = YaTranslatorAPITests;
+			productName = YaTranslatorAPITests;
+			productReference = E283C656233D659200EC2D88 /* YaTranslatorAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -294,6 +341,10 @@
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = E25F8C79214E2E080099A266;
 					};
+					E283C655233D659200EC2D88 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = E25F8C79214E2E080099A266;
+					};
 				};
 			};
 			buildConfigurationList = E25F8C75214E2E080099A266 /* Build configuration list for PBXProject "YaTranslator" */;
@@ -312,6 +363,7 @@
 				E25F8C79214E2E080099A266 /* YaTranslator */,
 				E25F8C90214E2E0E0099A266 /* YaTranslatorTests */,
 				E25F8C9B214E2E0F0099A266 /* YaTranslatorUITests */,
+				E283C655233D659200EC2D88 /* YaTranslatorAPITests */,
 			);
 		};
 /* End PBXProject section */
@@ -335,6 +387,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E25F8C9A214E2E0F0099A266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E283C654233D659200EC2D88 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -381,6 +440,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E283C652233D659200EC2D88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E283C659233D659200EC2D88 /* YaTranslatorAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -393,6 +460,11 @@
 			isa = PBXTargetDependency;
 			target = E25F8C79214E2E080099A266 /* YaTranslator */;
 			targetProxy = E25F8C9D214E2E0F0099A266 /* PBXContainerItemProxy */;
+		};
+		E283C65C233D659200EC2D88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E25F8C79214E2E080099A266 /* YaTranslator */;
+			targetProxy = E283C65B233D659200EC2D88 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -650,6 +722,46 @@
 			};
 			name = Release;
 		};
+		E283C65D233D659200EC2D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58XN93BEG2;
+				INFOPLIST_FILE = YaTranslatorAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTranslatorAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaTranslator.app/YaTranslator";
+			};
+			name = Debug;
+		};
+		E283C65E233D659200EC2D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58XN93BEG2;
+				INFOPLIST_FILE = YaTranslatorAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTranslatorAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaTranslator.app/YaTranslator";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -685,6 +797,15 @@
 			buildConfigurations = (
 				E25F8CAC214E2E0F0099A266 /* Debug */,
 				E25F8CAD214E2E0F0099A266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E283C65F233D659200EC2D88 /* Build configuration list for PBXNativeTarget "YaTranslatorAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E283C65D233D659200EC2D88 /* Debug */,
+				E283C65E233D659200EC2D88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
