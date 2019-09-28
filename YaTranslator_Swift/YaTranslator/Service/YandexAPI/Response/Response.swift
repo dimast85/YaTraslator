@@ -20,13 +20,14 @@ class Response: NSObject {
         self.delegate = delegate
     }
     
-    final func setResponseData(_ data:Data, orError error:Error!) {
+    final func setResponseData(_ data:Data?, orError error:Error!) {
         if error != nil {
             serverError(error!)
         } else {
             do {
-                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
-                    if let code = json["code"] == nil ? 0 : Int((json["code"] as? String)!) {
+                if let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String:Any] {
+//                    if let code = json["code"] == nil ? 0 : Int((json["code"] as? String)!) {
+                    if let code = json["code"] == nil ? 0 : json["code"] as? Int {
                         if code == 200 || code == 0 {
                             parseServerDictionary(json)
                         } else {

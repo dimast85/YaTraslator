@@ -18,9 +18,11 @@ class ResponseSupport : Response {
             getLangs.addInputOutputCountryCode(inputOutputCountryCode, langs: langs!)
         }
         
-        let cDataService = CoreDataService()
-        cDataService.saveSupportLanguages(getLangs.supports)
-        
-        self.delegate.yandexSupportLanguages(self.apiService(), didSupportLanguages: getLangs.supports)
+         DispatchQueue.main.async {
+            let cDataService = CoreDataService()
+            cDataService.saveSupportLanguages(getLangs.supports)
+            
+            self.delegate.yandexSupportLanguages(self.apiService(), didSupportLanguages: getLangs.supports)
+        }
     }
 }

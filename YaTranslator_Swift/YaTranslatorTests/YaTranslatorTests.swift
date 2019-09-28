@@ -178,7 +178,7 @@ class YaTranslatorTests: XCTestCase {
             let text = "Hi"
             translator.setInputText(text)
             
-            let serverJSON = ["code":"502", "message":"Invalid parametr: format:"]
+            let serverJSON = ["code":502, "message":"Invalid parametr: format:"] as [String : Any]
             
             do {
                 let data = try JSONSerialization.data(withJSONObject: serverJSON, options: .prettyPrinted)
@@ -224,7 +224,7 @@ class YaTranslatorTests: XCTestCase {
             let text = "Hi"
             translator.setInputText(text)
             
-            let serverJSON = ["code":"200", "lang":"en-ru", "text":["Привет"]] as [String : Any]
+            let serverJSON = ["code":200, "lang":"en-ru", "text":["Привет"]] as [String : Any]
             
             do {
                 let data = try JSONSerialization.data(withJSONObject: serverJSON, options: .prettyPrinted)
