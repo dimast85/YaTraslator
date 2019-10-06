@@ -14,7 +14,7 @@
 		E24DD55523364DE70063A8E6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DD55423364DE70063A8E6 /* Language.swift */; };
 		E24DD5582337696E0063A8E6 /* ResponseTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DD5572337696E0063A8E6 /* ResponseTranslator.swift */; };
 		E25F8C7E214E2E080099A266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8C7D214E2E080099A266 /* AppDelegate.swift */; };
-		E25F8C80214E2E080099A266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8C7F214E2E080099A266 /* ViewController.swift */; };
+		E25F8C80214E2E080099A266 /* TranslatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8C7F214E2E080099A266 /* TranslatorViewController.swift */; };
 		E25F8C83214E2E080099A266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25F8C81214E2E080099A266 /* Main.storyboard */; };
 		E25F8C86214E2E080099A266 /* YaTranslator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E25F8C84214E2E080099A266 /* YaTranslator.xcdatamodeld */; };
 		E25F8C88214E2E0D0099A266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25F8C87214E2E0D0099A266 /* Assets.xcassets */; };
@@ -25,6 +25,10 @@
 		E25F8CB4214E30290099A266 /* SupportLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8CB3214E30290099A266 /* SupportLanguage.swift */; };
 		E25F8CB6214E30510099A266 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8CB5214E30510099A266 /* Country.swift */; };
 		E25F8CB8214E30A20099A266 /* SupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8CB7214E30A20099A266 /* SupportTests.swift */; };
+		E26D432E2340A59B00943B24 /* TranslateToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D432D2340A59B00943B24 /* TranslateToolBarView.swift */; };
+		E26D43302340A5AA00943B24 /* TranslateToolBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D432F2340A5AA00943B24 /* TranslateToolBarView.xib */; };
+		E26D43322340A73D00943B24 /* ContriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D43312340A73D00943B24 /* ContriesView.swift */; };
+		E26D43342340A74C00943B24 /* ContriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D43332340A74C00943B24 /* ContriesView.xib */; };
 		E283C659233D659200EC2D88 /* YaTranslatorAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283C658233D659200EC2D88 /* YaTranslatorAPITests.swift */; };
 		E28A666221570F0E0018852B /* YandexAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A666121570F0E0018852B /* YandexAPIService.swift */; };
 /* End PBXBuildFile section */
@@ -62,7 +66,7 @@
 		E24DD5572337696E0063A8E6 /* ResponseTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTranslator.swift; sourceTree = "<group>"; };
 		E25F8C7A214E2E080099A266 /* YaTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25F8C7D214E2E080099A266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E25F8C7F214E2E080099A266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E25F8C7F214E2E080099A266 /* TranslatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorViewController.swift; sourceTree = "<group>"; };
 		E25F8C82214E2E080099A266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E25F8C85214E2E080099A266 /* YaTranslator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YaTranslator.xcdatamodel; sourceTree = "<group>"; };
 		E25F8C87214E2E0D0099A266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +82,10 @@
 		E25F8CB3214E30290099A266 /* SupportLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportLanguage.swift; sourceTree = "<group>"; };
 		E25F8CB5214E30510099A266 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		E25F8CB7214E30A20099A266 /* SupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportTests.swift; sourceTree = "<group>"; };
+		E26D432D2340A59B00943B24 /* TranslateToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateToolBarView.swift; sourceTree = "<group>"; };
+		E26D432F2340A5AA00943B24 /* TranslateToolBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TranslateToolBarView.xib; sourceTree = "<group>"; };
+		E26D43312340A73D00943B24 /* ContriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContriesView.swift; sourceTree = "<group>"; };
+		E26D43332340A74C00943B24 /* ContriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContriesView.xib; sourceTree = "<group>"; };
 		E283C656233D659200EC2D88 /* YaTranslatorAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaTranslatorAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E283C658233D659200EC2D88 /* YaTranslatorAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaTranslatorAPITests.swift; sourceTree = "<group>"; };
 		E283C65A233D659200EC2D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,13 +186,12 @@
 		E25F8C7C214E2E080099A266 /* YaTranslator */ = {
 			isa = PBXGroup;
 			children = (
+				E26D43272340A48100943B24 /* UI */,
+				E26D43262340A46D00943B24 /* Storyboards */,
 				E21A8CF521554E91004B90FE /* Service */,
 				E25F8CAE214E2FE00099A266 /* Model */,
 				E25F8C7D214E2E080099A266 /* AppDelegate.swift */,
-				E25F8C7F214E2E080099A266 /* ViewController.swift */,
-				E25F8C81214E2E080099A266 /* Main.storyboard */,
 				E25F8C87214E2E0D0099A266 /* Assets.xcassets */,
-				E25F8C89214E2E0D0099A266 /* LaunchScreen.storyboard */,
 				E25F8C8C214E2E0D0099A266 /* Info.plist */,
 			);
 			path = YaTranslator;
@@ -226,6 +233,67 @@
 				E25F8CB5214E30510099A266 /* Country.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		E26D43262340A46D00943B24 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E25F8C81214E2E080099A266 /* Main.storyboard */,
+				E25F8C89214E2E0D0099A266 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E26D43272340A48100943B24 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E26D432A2340A49D00943B24 /* Preferrence */,
+				E26D43292340A49600943B24 /* History */,
+				E26D43282340A48900943B24 /* Translate */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E26D43282340A48900943B24 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				E26D432C2340A51100943B24 /* TranslateToolBar */,
+				E26D432B2340A50400943B24 /* ChooseCountries */,
+				E25F8C7F214E2E080099A266 /* TranslatorViewController.swift */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		E26D43292340A49600943B24 /* History */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		E26D432A2340A49D00943B24 /* Preferrence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Preferrence;
+			sourceTree = "<group>";
+		};
+		E26D432B2340A50400943B24 /* ChooseCountries */ = {
+			isa = PBXGroup;
+			children = (
+				E26D43312340A73D00943B24 /* ContriesView.swift */,
+				E26D43332340A74C00943B24 /* ContriesView.xib */,
+			);
+			path = ChooseCountries;
+			sourceTree = "<group>";
+		};
+		E26D432C2340A51100943B24 /* TranslateToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				E26D432D2340A59B00943B24 /* TranslateToolBarView.swift */,
+				E26D432F2340A5AA00943B24 /* TranslateToolBarView.xib */,
+			);
+			path = TranslateToolBar;
 			sourceTree = "<group>";
 		};
 		E283C657233D659200EC2D88 /* YaTranslatorAPITests */ = {
@@ -374,8 +442,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25F8C8B214E2E0D0099A266 /* LaunchScreen.storyboard in Resources */,
+				E26D43302340A5AA00943B24 /* TranslateToolBarView.xib in Resources */,
 				E25F8C88214E2E0D0099A266 /* Assets.xcassets in Resources */,
 				E25F8C83214E2E080099A266 /* Main.storyboard in Resources */,
+				E26D43342340A74C00943B24 /* ContriesView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,12 +478,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E24DD55323364DD60063A8E6 /* Translator.swift in Sources */,
+				E26D43322340A73D00943B24 /* ContriesView.swift in Sources */,
 				E21A8CFF21594DA7004B90FE /* ResponseSupport.swift in Sources */,
 				E28A666221570F0E0018852B /* YandexAPIService.swift in Sources */,
 				E21A8CF821554EB2004B90FE /* CoreDataService.swift in Sources */,
-				E25F8C80214E2E080099A266 /* ViewController.swift in Sources */,
+				E25F8C80214E2E080099A266 /* TranslatorViewController.swift in Sources */,
 				E24DD5582337696E0063A8E6 /* ResponseTranslator.swift in Sources */,
 				E25F8CB4214E30290099A266 /* SupportLanguage.swift in Sources */,
+				E26D432E2340A59B00943B24 /* TranslateToolBarView.swift in Sources */,
 				E21A8CFD21594B59004B90FE /* Response.swift in Sources */,
 				E25F8C86214E2E080099A266 /* YaTranslator.xcdatamodeld in Sources */,
 				E25F8CB2214E30150099A266 /* GetLangs.swift in Sources */,

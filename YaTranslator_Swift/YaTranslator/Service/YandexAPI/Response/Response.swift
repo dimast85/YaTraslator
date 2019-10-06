@@ -26,7 +26,6 @@ class Response: NSObject {
         } else {
             do {
                 if let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String:Any] {
-//                    if let code = json["code"] == nil ? 0 : Int((json["code"] as? String)!) {
                     if let code = json["code"] == nil ? 0 : json["code"] as? Int {
                         if code == 200 || code == 0 {
                             parseServerDictionary(json)

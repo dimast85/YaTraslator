@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TranslatorViewController.swift
 //  YaTranslator
 //
 //  Created by Мартынов Дмитрий on 16/09/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TranslatorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
