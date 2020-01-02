@@ -1,0 +1,927 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E21A8CF821554EB2004B90FE /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A8CF721554EB2004B90FE /* CoreDataService.swift */; };
+		E21A8CFD21594B59004B90FE /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A8CFC21594B59004B90FE /* Response.swift */; };
+		E21A8CFF21594DA7004B90FE /* ResponseSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A8CFE21594DA7004B90FE /* ResponseSupport.swift */; };
+		E24DD55323364DD60063A8E6 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DD55223364DD60063A8E6 /* Translator.swift */; };
+		E24DD55523364DE70063A8E6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DD55423364DE70063A8E6 /* Language.swift */; };
+		E24DD5582337696E0063A8E6 /* ResponseTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DD5572337696E0063A8E6 /* ResponseTranslator.swift */; };
+		E2568A7C23BCD20300F0ED7C /* CountriesView.xib in Sources */ = {isa = PBXBuildFile; fileRef = E26D43332340A74C00943B24 /* CountriesView.xib */; };
+		E2568A8023BE309300F0ED7C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2568A7F23BE309300F0ED7C /* HistoryViewController.swift */; };
+		E2568A8423BE32BA00F0ED7C /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2568A8223BE32BA00F0ED7C /* HistoryCell.swift */; };
+		E2568A8523BE32BA00F0ED7C /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2568A8323BE32BA00F0ED7C /* HistoryCell.xib */; };
+		E2568A8723BE576400F0ED7C /* PreferrenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2568A8623BE576400F0ED7C /* PreferrenceViewController.swift */; };
+		E25F8C7E214E2E080099A266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8C7D214E2E080099A266 /* AppDelegate.swift */; };
+		E25F8C80214E2E080099A266 /* TranslatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8C7F214E2E080099A266 /* TranslatorViewController.swift */; };
+		E25F8C83214E2E080099A266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25F8C81214E2E080099A266 /* Main.storyboard */; };
+		E25F8C86214E2E080099A266 /* YaTranslator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E25F8C84214E2E080099A266 /* YaTranslator.xcdatamodeld */; };
+		E25F8C88214E2E0D0099A266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25F8C87214E2E0D0099A266 /* Assets.xcassets */; };
+		E25F8C8B214E2E0D0099A266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25F8C89214E2E0D0099A266 /* LaunchScreen.storyboard */; };
+		E25F8C96214E2E0F0099A266 /* YaTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8C95214E2E0F0099A266 /* YaTranslatorTests.swift */; };
+		E25F8CA1214E2E0F0099A266 /* YaTranslatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8CA0214E2E0F0099A266 /* YaTranslatorUITests.swift */; };
+		E25F8CB2214E30150099A266 /* GetLangs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8CB1214E30150099A266 /* GetLangs.swift */; };
+		E25F8CB4214E30290099A266 /* SupportLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8CB3214E30290099A266 /* SupportLanguage.swift */; };
+		E25F8CB6214E30510099A266 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8CB5214E30510099A266 /* Country.swift */; };
+		E25F8CB8214E30A20099A266 /* SupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8CB7214E30A20099A266 /* SupportTests.swift */; };
+		E26D432E2340A59B00943B24 /* TranslateToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D432D2340A59B00943B24 /* TranslateToolBarView.swift */; };
+		E26D43302340A5AA00943B24 /* TranslateToolBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D432F2340A5AA00943B24 /* TranslateToolBarView.xib */; };
+		E26D43322340A73D00943B24 /* CountriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D43312340A73D00943B24 /* CountriesView.swift */; };
+		E26D43342340A74C00943B24 /* CountriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D43332340A74C00943B24 /* CountriesView.xib */; };
+		E283C659233D659200EC2D88 /* YaTranslatorAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283C658233D659200EC2D88 /* YaTranslatorAPITests.swift */; };
+		E28A666221570F0E0018852B /* YandexAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A666121570F0E0018852B /* YandexAPIService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E25F8C92214E2E0E0099A266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25F8C72214E2E080099A266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25F8C79214E2E080099A266;
+			remoteInfo = YaTranslator;
+		};
+		E25F8C9D214E2E0F0099A266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25F8C72214E2E080099A266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25F8C79214E2E080099A266;
+			remoteInfo = YaTranslator;
+		};
+		E283C65B233D659200EC2D88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25F8C72214E2E080099A266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25F8C79214E2E080099A266;
+			remoteInfo = YaTranslator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E21A8CF721554EB2004B90FE /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		E21A8CFC21594B59004B90FE /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		E21A8CFE21594DA7004B90FE /* ResponseSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSupport.swift; sourceTree = "<group>"; };
+		E24DD55223364DD60063A8E6 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Translator.swift; path = YaTranslator/Model/Translator/Translator.swift; sourceTree = SOURCE_ROOT; };
+		E24DD55423364DE70063A8E6 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Language.swift; path = YaTranslator/Model/Translator/Language.swift; sourceTree = SOURCE_ROOT; };
+		E24DD5572337696E0063A8E6 /* ResponseTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTranslator.swift; sourceTree = "<group>"; };
+		E2568A7F23BE309300F0ED7C /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		E2568A8223BE32BA00F0ED7C /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		E2568A8323BE32BA00F0ED7C /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		E2568A8623BE576400F0ED7C /* PreferrenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferrenceViewController.swift; sourceTree = "<group>"; };
+		E25F8C7A214E2E080099A266 /* YaTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25F8C7D214E2E080099A266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E25F8C7F214E2E080099A266 /* TranslatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorViewController.swift; sourceTree = "<group>"; };
+		E25F8C82214E2E080099A266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E25F8C85214E2E080099A266 /* YaTranslator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YaTranslator.xcdatamodel; sourceTree = "<group>"; };
+		E25F8C87214E2E0D0099A266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E25F8C8A214E2E0D0099A266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E25F8C8C214E2E0D0099A266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E25F8C91214E2E0E0099A266 /* YaTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25F8C95214E2E0F0099A266 /* YaTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaTranslatorTests.swift; sourceTree = "<group>"; };
+		E25F8C97214E2E0F0099A266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E25F8C9C214E2E0F0099A266 /* YaTranslatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaTranslatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25F8CA0214E2E0F0099A266 /* YaTranslatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaTranslatorUITests.swift; sourceTree = "<group>"; };
+		E25F8CA2214E2E0F0099A266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E25F8CB1214E30150099A266 /* GetLangs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLangs.swift; sourceTree = "<group>"; };
+		E25F8CB3214E30290099A266 /* SupportLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportLanguage.swift; sourceTree = "<group>"; };
+		E25F8CB5214E30510099A266 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		E25F8CB7214E30A20099A266 /* SupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportTests.swift; sourceTree = "<group>"; };
+		E26D432D2340A59B00943B24 /* TranslateToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateToolBarView.swift; sourceTree = "<group>"; };
+		E26D432F2340A5AA00943B24 /* TranslateToolBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TranslateToolBarView.xib; sourceTree = "<group>"; };
+		E26D43312340A73D00943B24 /* CountriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesView.swift; sourceTree = "<group>"; };
+		E26D43332340A74C00943B24 /* CountriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesView.xib; sourceTree = "<group>"; };
+		E283C656233D659200EC2D88 /* YaTranslatorAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaTranslatorAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E283C658233D659200EC2D88 /* YaTranslatorAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaTranslatorAPITests.swift; sourceTree = "<group>"; };
+		E283C65A233D659200EC2D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E28A666121570F0E0018852B /* YandexAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexAPIService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E25F8C77214E2E080099A266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25F8C8E214E2E0E0099A266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25F8C99214E2E0F0099A266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E283C653233D659200EC2D88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E21A8CF521554E91004B90FE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E28A666021570ECB0018852B /* YandexAPI */,
+				E21A8CF621554E99004B90FE /* CoreData */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E21A8CF621554E99004B90FE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E21A8CF721554EB2004B90FE /* CoreDataService.swift */,
+				E25F8C84214E2E080099A266 /* YaTranslator.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E21A8CFB21594B35004B90FE /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				E21A8CFC21594B59004B90FE /* Response.swift */,
+				E21A8CFE21594DA7004B90FE /* ResponseSupport.swift */,
+				E24DD5572337696E0063A8E6 /* ResponseTranslator.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		E24DD55623366DB10063A8E6 /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				E24DD55223364DD60063A8E6 /* Translator.swift */,
+				E24DD55423364DE70063A8E6 /* Language.swift */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		E2568A8123BE328F00F0ED7C /* HistoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2568A8223BE32BA00F0ED7C /* HistoryCell.swift */,
+				E2568A8323BE32BA00F0ED7C /* HistoryCell.xib */,
+			);
+			path = HistoryCell;
+			sourceTree = "<group>";
+		};
+		E25F8C71214E2E080099A266 = {
+			isa = PBXGroup;
+			children = (
+				E25F8C7C214E2E080099A266 /* YaTranslator */,
+				E25F8C94214E2E0E0099A266 /* YaTranslatorTests */,
+				E25F8C9F214E2E0F0099A266 /* YaTranslatorUITests */,
+				E283C657233D659200EC2D88 /* YaTranslatorAPITests */,
+				E25F8C7B214E2E080099A266 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E25F8C7B214E2E080099A266 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E25F8C7A214E2E080099A266 /* YaTranslator.app */,
+				E25F8C91214E2E0E0099A266 /* YaTranslatorTests.xctest */,
+				E25F8C9C214E2E0F0099A266 /* YaTranslatorUITests.xctest */,
+				E283C656233D659200EC2D88 /* YaTranslatorAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E25F8C7C214E2E080099A266 /* YaTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				E26D43272340A48100943B24 /* UI */,
+				E26D43262340A46D00943B24 /* Storyboards */,
+				E21A8CF521554E91004B90FE /* Service */,
+				E25F8CAE214E2FE00099A266 /* Model */,
+				E25F8C7D214E2E080099A266 /* AppDelegate.swift */,
+				E25F8C87214E2E0D0099A266 /* Assets.xcassets */,
+				E25F8C8C214E2E0D0099A266 /* Info.plist */,
+			);
+			path = YaTranslator;
+			sourceTree = "<group>";
+		};
+		E25F8C94214E2E0E0099A266 /* YaTranslatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				E25F8CB7214E30A20099A266 /* SupportTests.swift */,
+				E25F8C95214E2E0F0099A266 /* YaTranslatorTests.swift */,
+				E25F8C97214E2E0F0099A266 /* Info.plist */,
+			);
+			path = YaTranslatorTests;
+			sourceTree = "<group>";
+		};
+		E25F8C9F214E2E0F0099A266 /* YaTranslatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E25F8CA0214E2E0F0099A266 /* YaTranslatorUITests.swift */,
+				E25F8CA2214E2E0F0099A266 /* Info.plist */,
+			);
+			path = YaTranslatorUITests;
+			sourceTree = "<group>";
+		};
+		E25F8CAE214E2FE00099A266 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E25F8CB0214E2FF00099A266 /* Support */,
+				E24DD55623366DB10063A8E6 /* Translator */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E25F8CB0214E2FF00099A266 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E25F8CB1214E30150099A266 /* GetLangs.swift */,
+				E25F8CB3214E30290099A266 /* SupportLanguage.swift */,
+				E25F8CB5214E30510099A266 /* Country.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		E26D43262340A46D00943B24 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E25F8C81214E2E080099A266 /* Main.storyboard */,
+				E25F8C89214E2E0D0099A266 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E26D43272340A48100943B24 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E26D432A2340A49D00943B24 /* Preferrence */,
+				E26D43292340A49600943B24 /* History */,
+				E26D43282340A48900943B24 /* Translate */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E26D43282340A48900943B24 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				E26D432C2340A51100943B24 /* TranslateToolBar */,
+				E26D432B2340A50400943B24 /* ChooseCountries */,
+				E25F8C7F214E2E080099A266 /* TranslatorViewController.swift */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		E26D43292340A49600943B24 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				E2568A8123BE328F00F0ED7C /* HistoryCell */,
+				E2568A7F23BE309300F0ED7C /* HistoryViewController.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		E26D432A2340A49D00943B24 /* Preferrence */ = {
+			isa = PBXGroup;
+			children = (
+				E2568A8623BE576400F0ED7C /* PreferrenceViewController.swift */,
+			);
+			path = Preferrence;
+			sourceTree = "<group>";
+		};
+		E26D432B2340A50400943B24 /* ChooseCountries */ = {
+			isa = PBXGroup;
+			children = (
+				E26D43312340A73D00943B24 /* CountriesView.swift */,
+				E26D43332340A74C00943B24 /* CountriesView.xib */,
+			);
+			path = ChooseCountries;
+			sourceTree = "<group>";
+		};
+		E26D432C2340A51100943B24 /* TranslateToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				E26D432D2340A59B00943B24 /* TranslateToolBarView.swift */,
+				E26D432F2340A5AA00943B24 /* TranslateToolBarView.xib */,
+			);
+			path = TranslateToolBar;
+			sourceTree = "<group>";
+		};
+		E283C657233D659200EC2D88 /* YaTranslatorAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				E283C658233D659200EC2D88 /* YaTranslatorAPITests.swift */,
+				E283C65A233D659200EC2D88 /* Info.plist */,
+			);
+			path = YaTranslatorAPITests;
+			sourceTree = "<group>";
+		};
+		E28A666021570ECB0018852B /* YandexAPI */ = {
+			isa = PBXGroup;
+			children = (
+				E21A8CFB21594B35004B90FE /* Response */,
+				E28A666121570F0E0018852B /* YandexAPIService.swift */,
+			);
+			path = YandexAPI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E25F8C79214E2E080099A266 /* YaTranslator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25F8CA5214E2E0F0099A266 /* Build configuration list for PBXNativeTarget "YaTranslator" */;
+			buildPhases = (
+				E25F8C76214E2E080099A266 /* Sources */,
+				E25F8C77214E2E080099A266 /* Frameworks */,
+				E25F8C78214E2E080099A266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YaTranslator;
+			productName = YaTranslator;
+			productReference = E25F8C7A214E2E080099A266 /* YaTranslator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E25F8C90214E2E0E0099A266 /* YaTranslatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25F8CA8214E2E0F0099A266 /* Build configuration list for PBXNativeTarget "YaTranslatorTests" */;
+			buildPhases = (
+				E25F8C8D214E2E0E0099A266 /* Sources */,
+				E25F8C8E214E2E0E0099A266 /* Frameworks */,
+				E25F8C8F214E2E0E0099A266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E25F8C93214E2E0E0099A266 /* PBXTargetDependency */,
+			);
+			name = YaTranslatorTests;
+			productName = YaTranslatorTests;
+			productReference = E25F8C91214E2E0E0099A266 /* YaTranslatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E25F8C9B214E2E0F0099A266 /* YaTranslatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25F8CAB214E2E0F0099A266 /* Build configuration list for PBXNativeTarget "YaTranslatorUITests" */;
+			buildPhases = (
+				E25F8C98214E2E0F0099A266 /* Sources */,
+				E25F8C99214E2E0F0099A266 /* Frameworks */,
+				E25F8C9A214E2E0F0099A266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E25F8C9E214E2E0F0099A266 /* PBXTargetDependency */,
+			);
+			name = YaTranslatorUITests;
+			productName = YaTranslatorUITests;
+			productReference = E25F8C9C214E2E0F0099A266 /* YaTranslatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E283C655233D659200EC2D88 /* YaTranslatorAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E283C65F233D659200EC2D88 /* Build configuration list for PBXNativeTarget "YaTranslatorAPITests" */;
+			buildPhases = (
+				E283C652233D659200EC2D88 /* Sources */,
+				E283C653233D659200EC2D88 /* Frameworks */,
+				E283C654233D659200EC2D88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E283C65C233D659200EC2D88 /* PBXTargetDependency */,
+			);
+			name = YaTranslatorAPITests;
+			productName = YaTranslatorAPITests;
+			productReference = E283C656233D659200EC2D88 /* YaTranslatorAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E25F8C72214E2E080099A266 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Мартынов Дмитрий";
+				TargetAttributes = {
+					E25F8C79214E2E080099A266 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					E25F8C90214E2E0E0099A266 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = E25F8C79214E2E080099A266;
+					};
+					E25F8C9B214E2E0F0099A266 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = E25F8C79214E2E080099A266;
+					};
+					E283C655233D659200EC2D88 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = E25F8C79214E2E080099A266;
+					};
+				};
+			};
+			buildConfigurationList = E25F8C75214E2E080099A266 /* Build configuration list for PBXProject "YaTranslator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E25F8C71214E2E080099A266;
+			productRefGroup = E25F8C7B214E2E080099A266 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E25F8C79214E2E080099A266 /* YaTranslator */,
+				E25F8C90214E2E0E0099A266 /* YaTranslatorTests */,
+				E25F8C9B214E2E0F0099A266 /* YaTranslatorUITests */,
+				E283C655233D659200EC2D88 /* YaTranslatorAPITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E25F8C78214E2E080099A266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25F8C8B214E2E0D0099A266 /* LaunchScreen.storyboard in Resources */,
+				E26D43302340A5AA00943B24 /* TranslateToolBarView.xib in Resources */,
+				E25F8C88214E2E0D0099A266 /* Assets.xcassets in Resources */,
+				E25F8C83214E2E080099A266 /* Main.storyboard in Resources */,
+				E2568A8523BE32BA00F0ED7C /* HistoryCell.xib in Resources */,
+				E26D43342340A74C00943B24 /* CountriesView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25F8C8F214E2E0E0099A266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25F8C9A214E2E0F0099A266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E283C654233D659200EC2D88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E25F8C76214E2E080099A266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2568A7C23BCD20300F0ED7C /* CountriesView.xib in Sources */,
+				E24DD55323364DD60063A8E6 /* Translator.swift in Sources */,
+				E26D43322340A73D00943B24 /* CountriesView.swift in Sources */,
+				E21A8CFF21594DA7004B90FE /* ResponseSupport.swift in Sources */,
+				E28A666221570F0E0018852B /* YandexAPIService.swift in Sources */,
+				E21A8CF821554EB2004B90FE /* CoreDataService.swift in Sources */,
+				E2568A8723BE576400F0ED7C /* PreferrenceViewController.swift in Sources */,
+				E25F8C80214E2E080099A266 /* TranslatorViewController.swift in Sources */,
+				E24DD5582337696E0063A8E6 /* ResponseTranslator.swift in Sources */,
+				E25F8CB4214E30290099A266 /* SupportLanguage.swift in Sources */,
+				E26D432E2340A59B00943B24 /* TranslateToolBarView.swift in Sources */,
+				E21A8CFD21594B59004B90FE /* Response.swift in Sources */,
+				E25F8C86214E2E080099A266 /* YaTranslator.xcdatamodeld in Sources */,
+				E2568A8423BE32BA00F0ED7C /* HistoryCell.swift in Sources */,
+				E25F8CB2214E30150099A266 /* GetLangs.swift in Sources */,
+				E24DD55523364DE70063A8E6 /* Language.swift in Sources */,
+				E25F8CB6214E30510099A266 /* Country.swift in Sources */,
+				E2568A8023BE309300F0ED7C /* HistoryViewController.swift in Sources */,
+				E25F8C7E214E2E080099A266 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25F8C8D214E2E0E0099A266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25F8C96214E2E0F0099A266 /* YaTranslatorTests.swift in Sources */,
+				E25F8CB8214E30A20099A266 /* SupportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25F8C98214E2E0F0099A266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25F8CA1214E2E0F0099A266 /* YaTranslatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E283C652233D659200EC2D88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E283C659233D659200EC2D88 /* YaTranslatorAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E25F8C93214E2E0E0099A266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E25F8C79214E2E080099A266 /* YaTranslator */;
+			targetProxy = E25F8C92214E2E0E0099A266 /* PBXContainerItemProxy */;
+		};
+		E25F8C9E214E2E0F0099A266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E25F8C79214E2E080099A266 /* YaTranslator */;
+			targetProxy = E25F8C9D214E2E0F0099A266 /* PBXContainerItemProxy */;
+		};
+		E283C65C233D659200EC2D88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E25F8C79214E2E080099A266 /* YaTranslator */;
+			targetProxy = E283C65B233D659200EC2D88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E25F8C81214E2E080099A266 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E25F8C82214E2E080099A266 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E25F8C89214E2E0D0099A266 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E25F8C8A214E2E0D0099A266 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E25F8CA3214E2E0F0099A266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E25F8CA4214E2E0F0099A266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E25F8CA6214E2E0F0099A266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58XN93BEG2;
+				INFOPLIST_FILE = YaTranslator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E25F8CA7214E2E0F0099A266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58XN93BEG2;
+				INFOPLIST_FILE = YaTranslator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E25F8CA9214E2E0F0099A266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58XN93BEG2;
+				INFOPLIST_FILE = YaTranslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaTranslator.app/YaTranslator";
+			};
+			name = Debug;
+		};
+		E25F8CAA214E2E0F0099A266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58XN93BEG2;
+				INFOPLIST_FILE = YaTranslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaTranslator.app/YaTranslator";
+			};
+			name = Release;
+		};
+		E25F8CAC214E2E0F0099A266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58XN93BEG2;
+				INFOPLIST_FILE = YaTranslatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTranslatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YaTranslator;
+			};
+			name = Debug;
+		};
+		E25F8CAD214E2E0F0099A266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58XN93BEG2;
+				INFOPLIST_FILE = YaTranslatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTranslatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YaTranslator;
+			};
+			name = Release;
+		};
+		E283C65D233D659200EC2D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58XN93BEG2;
+				INFOPLIST_FILE = YaTranslatorAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTranslatorAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaTranslator.app/YaTranslator";
+			};
+			name = Debug;
+		};
+		E283C65E233D659200EC2D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58XN93BEG2;
+				INFOPLIST_FILE = YaTranslatorAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = indy.YaTranslatorAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YaTranslator.app/YaTranslator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E25F8C75214E2E080099A266 /* Build configuration list for PBXProject "YaTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25F8CA3214E2E0F0099A266 /* Debug */,
+				E25F8CA4214E2E0F0099A266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E25F8CA5214E2E0F0099A266 /* Build configuration list for PBXNativeTarget "YaTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25F8CA6214E2E0F0099A266 /* Debug */,
+				E25F8CA7214E2E0F0099A266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E25F8CA8214E2E0F0099A266 /* Build configuration list for PBXNativeTarget "YaTranslatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25F8CA9214E2E0F0099A266 /* Debug */,
+				E25F8CAA214E2E0F0099A266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E25F8CAB214E2E0F0099A266 /* Build configuration list for PBXNativeTarget "YaTranslatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25F8CAC214E2E0F0099A266 /* Debug */,
+				E25F8CAD214E2E0F0099A266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E283C65F233D659200EC2D88 /* Build configuration list for PBXNativeTarget "YaTranslatorAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E283C65D233D659200EC2D88 /* Debug */,
+				E283C65E233D659200EC2D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E25F8C84214E2E080099A266 /* YaTranslator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E25F8C85214E2E080099A266 /* YaTranslator.xcdatamodel */,
+			);
+			currentVersion = E25F8C85214E2E080099A266 /* YaTranslator.xcdatamodel */;
+			path = YaTranslator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E25F8C72214E2E080099A266 /* Project object */;
+}
