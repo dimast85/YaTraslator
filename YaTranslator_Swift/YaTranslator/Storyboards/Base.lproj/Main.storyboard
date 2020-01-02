@@ -11,17 +11,32 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--History View Controller-->
         <scene sceneID="va2-ZB-Zqx">
             <objects>
-                <viewController id="Iw2-9S-b2s" sceneMemberID="viewController">
+                <viewController id="Iw2-9S-b2s" customClass="HistoryViewController" customModule="YaTranslator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="isL-fa-Zzq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tcV-Du-LcM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tcV-Du-LcM" secondAttribute="trailing" id="CXf-2a-7C3"/>
+                            <constraint firstItem="tcV-Du-LcM" firstAttribute="leading" secondItem="ecO-e8-teU" secondAttribute="leading" id="YsF-uW-N0O"/>
+                            <constraint firstItem="ecO-e8-teU" firstAttribute="bottom" secondItem="tcV-Du-LcM" secondAttribute="bottom" id="bOf-py-cTf"/>
+                            <constraint firstItem="tcV-Du-LcM" firstAttribute="top" secondItem="isL-fa-Zzq" secondAttribute="top" id="oov-Cb-cVU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ecO-e8-teU"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="wGF-as-YgL"/>
+                    <connections>
+                        <outlet property="tableView" destination="tcV-Du-LcM" id="xu9-yz-KUY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqR-Z7-5Jq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,28 +51,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCH-Ch-uaB">
-                                <rect key="frame" x="16" y="318.5" width="70" height="30"/>
+                                <rect key="frame" x="16" y="318.5" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.63921568630000003" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9bB-t5-e76"/>
-                                    <constraint firstAttribute="width" constant="70" id="TYa-Lb-S0j"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="actionInputCountryButton:" destination="mp1-si-D4A" eventType="touchUpInside" id="0fo-88-5xY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEl-Cn-LgO">
-                                <rect key="frame" x="152.5" y="318.5" width="70" height="30"/>
+                                <rect key="frame" x="172.5" y="318.5" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.63921568630000003" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6Ps-Xd-No2"/>
-                                    <constraint firstAttribute="width" constant="70" id="MYu-rs-ARB"/>
                                 </constraints>
                                 <state key="normal" title="-&gt;"/>
+                                <connections>
+                                    <action selector="actionChangeLanguagesButton:" destination="mp1-si-D4A" eventType="touchUpInside" id="NnP-Dr-VaI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0R-9I-shf">
-                                <rect key="frame" x="289" y="318.5" width="70" height="30"/>
+                                <rect key="frame" x="313" y="318.5" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.63921568630000003" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Woq-8O-zVG"/>
-                                    <constraint firstAttribute="width" constant="70" id="qYF-C7-2Y1"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="actionOutputCountryButton:" destination="mp1-si-D4A" eventType="touchUpInside" id="SVp-jP-CQK"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KNr-AK-WuS">
                                 <rect key="frame" x="8" y="356.5" width="359" height="253.5"/>
@@ -70,13 +94,17 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mp1-si-D4A" id="t6p-pF-Nze"/>
+                                </connections>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LCH-Ch-uaB" firstAttribute="centerY" secondItem="4pN-Fi-6cw" secondAttribute="centerY" id="02Y-1e-C7C"/>
                             <constraint firstItem="hHy-2d-5CZ" firstAttribute="trailing" secondItem="q0R-9I-shf" secondAttribute="trailing" constant="16" id="8QB-nY-rJH"/>
                             <constraint firstItem="KNr-AK-WuS" firstAttribute="top" secondItem="rEl-Cn-LgO" secondAttribute="bottom" constant="8" id="Frw-Gy-2zS"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LCH-Ch-uaB" secondAttribute="trailing" constant="20" symbolic="YES" id="Hu0-GZ-SuV"/>
                             <constraint firstItem="LCH-Ch-uaB" firstAttribute="leading" secondItem="hHy-2d-5CZ" secondAttribute="leading" constant="16" id="MLB-1A-kh9"/>
                             <constraint firstItem="hHy-2d-5CZ" firstAttribute="trailing" secondItem="KNr-AK-WuS" secondAttribute="trailing" constant="8" id="O4c-NL-sZY"/>
                             <constraint firstItem="rEl-Cn-LgO" firstAttribute="centerX" secondItem="4pN-Fi-6cw" secondAttribute="centerX" id="RM2-bf-Xaz"/>
@@ -85,6 +113,7 @@
                             <constraint firstItem="rEl-Cn-LgO" firstAttribute="centerY" secondItem="4pN-Fi-6cw" secondAttribute="centerY" id="TZN-mn-tYb"/>
                             <constraint firstItem="hHy-2d-5CZ" firstAttribute="trailing" secondItem="lby-Ko-AlS" secondAttribute="trailing" constant="8" id="XPN-EJ-VVr"/>
                             <constraint firstAttribute="bottomMargin" secondItem="KNr-AK-WuS" secondAttribute="bottom" constant="8" id="aMw-0P-oiA"/>
+                            <constraint firstItem="q0R-9I-shf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4pN-Fi-6cw" secondAttribute="leading" constant="20" symbolic="YES" id="b16-6x-f3K"/>
                             <constraint firstItem="KNr-AK-WuS" firstAttribute="leading" secondItem="hHy-2d-5CZ" secondAttribute="leading" constant="8" id="fbo-za-gSl"/>
                             <constraint firstItem="lby-Ko-AlS" firstAttribute="top" secondItem="hHy-2d-5CZ" secondAttribute="top" constant="8" id="q0p-pW-YEx"/>
                             <constraint firstItem="LCH-Ch-uaB" firstAttribute="top" secondItem="lby-Ko-AlS" secondAttribute="bottom" constant="8" id="r6U-Pb-tdd"/>
@@ -92,6 +121,13 @@
                         <viewLayoutGuide key="safeArea" id="hHy-2d-5CZ"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="FlX-5E-gdG"/>
+                    <connections>
+                        <outlet property="inputCountryButton" destination="LCH-Ch-uaB" id="5YW-Bs-7U3"/>
+                        <outlet property="inputTextView" destination="lby-Ko-AlS" id="gRH-NP-RIB"/>
+                        <outlet property="outputCountryButton" destination="q0R-9I-shf" id="7ec-EQ-AjY"/>
+                        <outlet property="outputTextView" destination="KNr-AK-WuS" id="jig-lx-Eyc"/>
+                        <outlet property="swapButton" destination="rEl-Cn-LgO" id="44t-fE-0JI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ej-ym-Bek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,18 +172,39 @@
         <!--Переводчик-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController title="Переводчик" id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController title="Переводчик" id="BYZ-38-t0r" customClass="PreferrenceViewController" customModule="YaTranslator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miu-cx-rLy">
+                                <rect key="frame" x="122.5" y="88" width="130" height="44"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.63921568630000003" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Kpo-L5-H2R"/>
+                                    <constraint firstAttribute="width" constant="130" id="phT-Tf-jSK"/>
+                                </constraints>
+                                <state key="normal" title="Clear History"/>
+                                <connections>
+                                    <action selector="actionClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q0o-Cs-ulG"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="miu-cx-rLy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IXW-3U-hbM"/>
+                            <constraint firstItem="miu-cx-rLy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="eEx-e0-nfw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="qpy-ya-pSp"/>
+                    <connections>
+                        <outlet property="clearAllhistoryButton" destination="miu-cx-rLy" id="Ved-Tp-gCb"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-444" y="711"/>
+            <point key="canvasLocation" x="-444" y="710.19490254872574"/>
         </scene>
     </scenes>
 </document>

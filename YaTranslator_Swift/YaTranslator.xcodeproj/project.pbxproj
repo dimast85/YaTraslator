@@ -13,6 +13,11 @@
 		E24DD55323364DD60063A8E6 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DD55223364DD60063A8E6 /* Translator.swift */; };
 		E24DD55523364DE70063A8E6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DD55423364DE70063A8E6 /* Language.swift */; };
 		E24DD5582337696E0063A8E6 /* ResponseTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DD5572337696E0063A8E6 /* ResponseTranslator.swift */; };
+		E2568A7C23BCD20300F0ED7C /* CountriesView.xib in Sources */ = {isa = PBXBuildFile; fileRef = E26D43332340A74C00943B24 /* CountriesView.xib */; };
+		E2568A8023BE309300F0ED7C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2568A7F23BE309300F0ED7C /* HistoryViewController.swift */; };
+		E2568A8423BE32BA00F0ED7C /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2568A8223BE32BA00F0ED7C /* HistoryCell.swift */; };
+		E2568A8523BE32BA00F0ED7C /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2568A8323BE32BA00F0ED7C /* HistoryCell.xib */; };
+		E2568A8723BE576400F0ED7C /* PreferrenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2568A8623BE576400F0ED7C /* PreferrenceViewController.swift */; };
 		E25F8C7E214E2E080099A266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8C7D214E2E080099A266 /* AppDelegate.swift */; };
 		E25F8C80214E2E080099A266 /* TranslatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8C7F214E2E080099A266 /* TranslatorViewController.swift */; };
 		E25F8C83214E2E080099A266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25F8C81214E2E080099A266 /* Main.storyboard */; };
@@ -27,8 +32,8 @@
 		E25F8CB8214E30A20099A266 /* SupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F8CB7214E30A20099A266 /* SupportTests.swift */; };
 		E26D432E2340A59B00943B24 /* TranslateToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D432D2340A59B00943B24 /* TranslateToolBarView.swift */; };
 		E26D43302340A5AA00943B24 /* TranslateToolBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D432F2340A5AA00943B24 /* TranslateToolBarView.xib */; };
-		E26D43322340A73D00943B24 /* ContriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D43312340A73D00943B24 /* ContriesView.swift */; };
-		E26D43342340A74C00943B24 /* ContriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D43332340A74C00943B24 /* ContriesView.xib */; };
+		E26D43322340A73D00943B24 /* CountriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D43312340A73D00943B24 /* CountriesView.swift */; };
+		E26D43342340A74C00943B24 /* CountriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D43332340A74C00943B24 /* CountriesView.xib */; };
 		E283C659233D659200EC2D88 /* YaTranslatorAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283C658233D659200EC2D88 /* YaTranslatorAPITests.swift */; };
 		E28A666221570F0E0018852B /* YandexAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A666121570F0E0018852B /* YandexAPIService.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +69,10 @@
 		E24DD55223364DD60063A8E6 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Translator.swift; path = YaTranslator/Model/Translator/Translator.swift; sourceTree = SOURCE_ROOT; };
 		E24DD55423364DE70063A8E6 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Language.swift; path = YaTranslator/Model/Translator/Language.swift; sourceTree = SOURCE_ROOT; };
 		E24DD5572337696E0063A8E6 /* ResponseTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTranslator.swift; sourceTree = "<group>"; };
+		E2568A7F23BE309300F0ED7C /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		E2568A8223BE32BA00F0ED7C /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		E2568A8323BE32BA00F0ED7C /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		E2568A8623BE576400F0ED7C /* PreferrenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferrenceViewController.swift; sourceTree = "<group>"; };
 		E25F8C7A214E2E080099A266 /* YaTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25F8C7D214E2E080099A266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E25F8C7F214E2E080099A266 /* TranslatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorViewController.swift; sourceTree = "<group>"; };
@@ -84,8 +93,8 @@
 		E25F8CB7214E30A20099A266 /* SupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportTests.swift; sourceTree = "<group>"; };
 		E26D432D2340A59B00943B24 /* TranslateToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateToolBarView.swift; sourceTree = "<group>"; };
 		E26D432F2340A5AA00943B24 /* TranslateToolBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TranslateToolBarView.xib; sourceTree = "<group>"; };
-		E26D43312340A73D00943B24 /* ContriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContriesView.swift; sourceTree = "<group>"; };
-		E26D43332340A74C00943B24 /* ContriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContriesView.xib; sourceTree = "<group>"; };
+		E26D43312340A73D00943B24 /* CountriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesView.swift; sourceTree = "<group>"; };
+		E26D43332340A74C00943B24 /* CountriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesView.xib; sourceTree = "<group>"; };
 		E283C656233D659200EC2D88 /* YaTranslatorAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaTranslatorAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E283C658233D659200EC2D88 /* YaTranslatorAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaTranslatorAPITests.swift; sourceTree = "<group>"; };
 		E283C65A233D659200EC2D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -159,6 +168,15 @@
 				E24DD55423364DE70063A8E6 /* Language.swift */,
 			);
 			path = Translator;
+			sourceTree = "<group>";
+		};
+		E2568A8123BE328F00F0ED7C /* HistoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2568A8223BE32BA00F0ED7C /* HistoryCell.swift */,
+				E2568A8323BE32BA00F0ED7C /* HistoryCell.xib */,
+			);
+			path = HistoryCell;
 			sourceTree = "<group>";
 		};
 		E25F8C71214E2E080099A266 = {
@@ -267,6 +285,8 @@
 		E26D43292340A49600943B24 /* History */ = {
 			isa = PBXGroup;
 			children = (
+				E2568A8123BE328F00F0ED7C /* HistoryCell */,
+				E2568A7F23BE309300F0ED7C /* HistoryViewController.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -274,6 +294,7 @@
 		E26D432A2340A49D00943B24 /* Preferrence */ = {
 			isa = PBXGroup;
 			children = (
+				E2568A8623BE576400F0ED7C /* PreferrenceViewController.swift */,
 			);
 			path = Preferrence;
 			sourceTree = "<group>";
@@ -281,8 +302,8 @@
 		E26D432B2340A50400943B24 /* ChooseCountries */ = {
 			isa = PBXGroup;
 			children = (
-				E26D43312340A73D00943B24 /* ContriesView.swift */,
-				E26D43332340A74C00943B24 /* ContriesView.xib */,
+				E26D43312340A73D00943B24 /* CountriesView.swift */,
+				E26D43332340A74C00943B24 /* CountriesView.xib */,
 			);
 			path = ChooseCountries;
 			sourceTree = "<group>";
@@ -445,7 +466,8 @@
 				E26D43302340A5AA00943B24 /* TranslateToolBarView.xib in Resources */,
 				E25F8C88214E2E0D0099A266 /* Assets.xcassets in Resources */,
 				E25F8C83214E2E080099A266 /* Main.storyboard in Resources */,
-				E26D43342340A74C00943B24 /* ContriesView.xib in Resources */,
+				E2568A8523BE32BA00F0ED7C /* HistoryCell.xib in Resources */,
+				E26D43342340A74C00943B24 /* CountriesView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,20 +499,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2568A7C23BCD20300F0ED7C /* CountriesView.xib in Sources */,
 				E24DD55323364DD60063A8E6 /* Translator.swift in Sources */,
-				E26D43322340A73D00943B24 /* ContriesView.swift in Sources */,
+				E26D43322340A73D00943B24 /* CountriesView.swift in Sources */,
 				E21A8CFF21594DA7004B90FE /* ResponseSupport.swift in Sources */,
 				E28A666221570F0E0018852B /* YandexAPIService.swift in Sources */,
 				E21A8CF821554EB2004B90FE /* CoreDataService.swift in Sources */,
+				E2568A8723BE576400F0ED7C /* PreferrenceViewController.swift in Sources */,
 				E25F8C80214E2E080099A266 /* TranslatorViewController.swift in Sources */,
 				E24DD5582337696E0063A8E6 /* ResponseTranslator.swift in Sources */,
 				E25F8CB4214E30290099A266 /* SupportLanguage.swift in Sources */,
 				E26D432E2340A59B00943B24 /* TranslateToolBarView.swift in Sources */,
 				E21A8CFD21594B59004B90FE /* Response.swift in Sources */,
 				E25F8C86214E2E080099A266 /* YaTranslator.xcdatamodeld in Sources */,
+				E2568A8423BE32BA00F0ED7C /* HistoryCell.swift in Sources */,
 				E25F8CB2214E30150099A266 /* GetLangs.swift in Sources */,
 				E24DD55523364DE70063A8E6 /* Language.swift in Sources */,
 				E25F8CB6214E30510099A266 /* Country.swift in Sources */,
+				E2568A8023BE309300F0ED7C /* HistoryViewController.swift in Sources */,
 				E25F8C7E214E2E080099A266 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

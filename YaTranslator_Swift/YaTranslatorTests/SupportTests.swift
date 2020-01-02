@@ -56,7 +56,7 @@ class SupportTests: XCTestCase {
     }
     
     func testSupportInitAndSaveToCoreData() {
-        let serverDictionary:[String:Any] = [SupportLanguage.KeySupportDirs:["ru-en","ru-pl","ru-fr","en-ru","ru-fr","ua-ru", "ua-en"],
+        let serverDictionary:[String:Any] = [SupportLanguage.KeySupportDirs:["ru-en","ru-pl","ru-fr","en-ru", "en-fr", "ru-fr","ua-ru", "ua-en"],
                                              SupportLanguage.KeySupportLangs:["ru":"русский",
                                                                               "en":"английский",
                                                                               "fr":"французкий",
